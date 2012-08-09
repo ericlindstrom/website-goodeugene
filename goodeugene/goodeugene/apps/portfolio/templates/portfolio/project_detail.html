@@ -1,0 +1,29 @@
+{% extends "portfolio/base.html" %}
+{% load markup %}
+
+{% block body_class %}{{ block.super }} project_detail{% endblock body_class %}
+
+{% block portfolio_content %}
+    <h1>
+    {% if object.client %}
+	<a href="{{ object.get_absolute_url }}"><span>{{ object.client.name }}</span> {{ object.name }}</a>
+    {% endif %}
+    </h1>
+
+    {% if object.description %}
+    <p id="details_link"><a href="#">Details</a></p>
+    <div id="details">
+	{{ object.description|markdown }}
+    </div>
+    {% endif %}
+
+
+    {% if object.url %}<p><a href="{{ object.url }}" target="_blank" class="block_link">View Project &rarr;</a></p>{% endif %}
+    
+    <div id="media">
+	{% for photo in object.image_set.all %}
+	<img src="{{ photo.full_size.url }}" width="800">
+	{% endfor %}
+    </div>
+
+{% endblock portfolio_content %}

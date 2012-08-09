@@ -1,0 +1,56 @@
+{# spaceless #}
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/goodeugene.css">
+
+  {% block extra_head %}{% endblock extra_head %}
+
+  <script src="{{ STATIC_URL }}js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+
+<body id="default" class="{% block body_class %}{% endblock body_class %}">
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <section id="header">
+    <div class="position">
+	<div class="container">
+	    <header>
+	    <h1>{#Site Title#}</h1>
+	    </header>
+	</div>
+    </div>
+  </section>
+  <div role="main">
+	{% block content %}{% endblock content %}
+  </div>
+  <footer>
+
+  </footer>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"><\/script>')</script>
+  
+  <script src="{{ STATIC_URL }}js/plugins.js"></script>
+  <script src="{{ STATIC_URL }}js/script.js"></script>
+  {% block extra_js %}{% endblock extra_js %}
+
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+</body>
+</html>
+{# endspaceless #}

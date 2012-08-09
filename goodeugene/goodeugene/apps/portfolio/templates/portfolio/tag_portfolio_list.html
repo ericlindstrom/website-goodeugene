@@ -1,0 +1,15 @@
+<div id="portfolio_items_container" >
+	<div class="center">
+		<div id="portfolio_items">
+		    <ul>
+		    {% for item in items %}
+				<li {% if forloop.counter|divisibleby:'4' %}class="endrow"{% endif %}>
+					<div class="thumb_img"><a href="{{ item.get_absolute_url }}"><img src="{{ item.photo_set.all.0.thumb.url }}" /></a></div>
+					<p><a href="{{ item.get_absolute_url }}">{{ item.client.name }}<br/><strong>{{ item.title }}</strong></a></p>
+				</li>
+		    {% endfor %}
+		    </ul>
+			<p class="back_to_top"><a href="#">Close this guy</a></p>
+		</div>
+	</div>
+</div>

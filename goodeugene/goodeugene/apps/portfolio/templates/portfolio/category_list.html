@@ -1,0 +1,15 @@
+{% extends "portfolio/base.html" %}
+
+{% block body_class %}{{ block.super }} cateogry_list{% endblock body_class %}
+
+{% block portfolio_content %}
+    {% if object_list %}
+	<ul>
+	{% for object in object_list %}
+	    <li><a href="{{ object.get_absolute_url }}">{{ object }}</a></li>
+	{% endfor %}
+	</ul>
+    {% else %}
+	Nothing here.
+    {% endif %}
+{% endblock portfolio_content %}

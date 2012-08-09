@@ -1,0 +1,50 @@
+body {
+    background:#ffffff url('../img/bg_pat.png');
+}
+
+section {
+    float:left; position:relative;
+    width:100%;
+}
+
+.position {
+    margin:0 auto;
+    width:960px;
+}
+.container { 
+    float:left; position:relative;
+    width:960px;
+}
+
+h1 { 
+    text-transform:uppercase;
+    -webkit-text-stroke:1px;
+}
+
+h1 span { 
+    -webkit-text-stroke:0;
+}
+
+#header { background:#FFF;  border-bottom:1px solid #e0e0e0;}
+
+#project_list { 
+    float:left; position:relative; 
+}
+
+.row { float:left; position:relative; }
+
+#project_list .item { 
+    float:left; position:relative; 
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+#project_list .item a { float:left; position:relative; width:200px; padding:10px; border:1px solid transparent; }
+#project_list .item a:hover { background:#FFF; border:1px solid #e0e0e0; }
+#project_list .item a img { float:left; position:relative; width:100%; }
+
+/* TRANSITION */
+#project_list ul li a {
+    -webkit-transition:all .1s linear;
+}
