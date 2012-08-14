@@ -24,25 +24,27 @@
     <div class="position">
 	<div class="container">
 	    <header>
-		<h1><a href="{# url home #}">Eugene good</a>{% block project_title %}{% endblock project_title %}</h1>
+		<h1><a href="/">Eugene Good</a>{% block project_title %}{% endblock project_title %}</h1>
 	    </header>
 
 	    <nav>
 		<ul>
-		    <li><a href="#">Portfolio</a></li>
-		    <li><a href="#">Blog</a></li>
-		    <li><a href="#">Info</a></li>
+		    <li id="nav_portfolio"><a href="{% url portfolio:index %}">Portfolio</a></li>
+		    <li id="nav_blog"><a href="#">Blog</a></li>
+		    <li id="nav_info"><a href="#">Info</a></li>
 		</ul>
 	    </nav>
 	</div>
     </div>
   </section>
   <section id="content_wrap">
+    {% block content_wrap %}
     <div class="position">
       <div id="content" class="container" role="main">
 	    {% block content %}{% endblock content %}
       </div>
     </div>
+    {% endblock content_wrap %}
   </section>
   <footer>
 

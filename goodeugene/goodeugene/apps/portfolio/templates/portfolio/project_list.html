@@ -5,19 +5,24 @@
 {% block portfolio_content %}
 <div id="project_list">
     {% if project_list %}
-	<h1>Projects</h1>
+	{#<h1>Projects</h1>#}
 	{% for project in project_list %}
+	{% comment %}
 	{% if forloop.first %}<div class="row">{% endif %}
+	{% endcomment %}
 	    <div class="item">
 		<a href="{{ project.get_absolute_url }}">
-		<img src="{{ project.get_thumbnail.url }}" /><br/>
-		{{ project.client.name }}<br/>{{ project.name }}</a>
+		    <img src="{{ project.get_thumbnail.url }}" />
+		    {#<br/>{{ project.client.name }}<br/>{{ project.name }}#}
+		</a>
 	    </div>
-	{% if forloop.counter|divisibleby:4 %}
-	</div><div class="row">
-	{% else %}
-	    {% if forloop.last %}</div>{% endif %}
-	{% endif %}
+	{% comment %}
+	    {% if forloop.counter|divisibleby:4 %}
+	    </div><div class="row">
+	    {% else %}
+		{% if forloop.last %}</div>{% endif %}
+	    {% endif %}
+	{% endcomment %}
 	{% endfor %}
     {% else %}
 	<h1>Sheeeeittttt.<br/>You haven't added any projects yet. <a href="/admin/portfolio/">click here to add some.</a></h1>
