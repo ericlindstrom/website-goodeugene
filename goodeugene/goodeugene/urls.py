@@ -10,7 +10,7 @@ from django.conf.urls.static import static
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'goodeugene.views.home', name='home'),
+    #url(r'^$', '', name='home'),
     # url(r'^goodeugene/', include('goodeugene.foo.urls')),
     url(r'^portfolio/', include('goodeugene.apps.portfolio.urls', namespace="portfolio")),
 

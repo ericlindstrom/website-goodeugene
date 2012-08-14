@@ -3,6 +3,8 @@
 
 {% block body_class %}{{ block.super }} project_detail{% endblock body_class %}
 
+{% block project_title %}/<span><a href="{{ object.get_absolute_url }}">{{ object.client.name }} {{ object.name }}</a></span>{% endblock project_title %}
+
 {% block portfolio_content %}
     <h1>
     {% if object.client %}
@@ -22,8 +24,16 @@
     
     <div id="media">
 	{% for photo in object.image_set.all %}
-	<img src="{{ photo.full_size.url }}" width="800">
+	<a id="{{ forloop.counter }}" class="anchor" ></a>
+	<img src="{{ photo.full_size.url }}">
 	{% endfor %}
     </div>
+
+    <ul class="control">
+	{% for photo in object.image_set.all %}
+	    <li><a href="#{{ forloop.counter }}">{{ forloop.counter }}</a></li>
+	{% endfor %}
+    </ul>
+
 
 {% endblock portfolio_content %}

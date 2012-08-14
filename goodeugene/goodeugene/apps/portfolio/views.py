@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView, ListView, DetailView
 from django.conf import settings
 from models import *
+from app_settings import NON_WORK
 
 class PortfolioIndex(ListView):
     model = Project
@@ -64,4 +65,7 @@ class PortfolioDetail(DetailView):
     model = Project
 
     def get_queryset(self):
-	return Project.objects.live().filter(client__slug=self.kwargs['client'], slug=self.kwargs['slug'])
+	if self.kwargs['client'] == NON_WORK['slug']:
+	    return Project.objects.live().filter(slug=self.kwargs['slug'])
+	else:
+	    return Project.objects.live().filter(client__slug=self.kwargs['client'], slug=self.kwargs['slug'])

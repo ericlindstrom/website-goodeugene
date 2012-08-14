@@ -71,13 +71,37 @@ body {
     font-family: 'Open Sans', sans-serif; 
     font-weight:300;
 }
+
+#header,
 h1,h2,h3,h4,h5,h6 {
     font-family:'Montserrat', 'Open Sans', sans-serif;
 }
 
+#header { position:fixed; z-index:10; }
+#header header h1 { float:left; position:relative; }
+#header nav { float:right; position:relative; top:25px; }
+#header nav ul { float:left; position:relative; }
+#header nav ul li { float:left; position:relative; margin-left:20px; text-transform:uppercase; }
 
-a { text-decoration:none; }
+#content_wrap { margin-top:74px; }
 
+a, a:visited { text-decoration:none; color:#4a4a4a; }
+a:hover { color:#ec008c; }
+
+.project_detail #media .anchor { float:left; position:relative; width:100%; height:1px; margin-top:-90px; }
+.project_detail #media img { float:left; position:relative; width:100%; margin-bottom:20px; }
+.project_detail #content .control { right:10px; top:50%; position:fixed; list-style-type:none; width:20px; }
+.project_detail #content .control li { float:left; position:relative; margin-bottom:6px; }
+.project_detail #content .control li a { 
+    float:left; position:relative; 
+    text-indent:-9999px;
+    background:#c0c0c0;
+    border-radius:6px;
+    width:12px; height:12px;
+}
+
+.project_detail #header header h1 span a { font-size:11px; color:#888; }
+.project_detail #header header h1 span a:hover { color:#ec008c; }
 
 
 /**********************************************************************************/

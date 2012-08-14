@@ -18,11 +18,11 @@ section {
 
 h1 { 
     text-transform:uppercase;
-    -webkit-text-stroke:1px;
+    -webkit-text-stroke:0;
 }
 
 h1 span { 
-    -webkit-text-stroke:0;
+
 }
 
 #header { background:#FFF;  border-bottom:1px solid #e0e0e0;}

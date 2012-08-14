@@ -1,5 +1,5 @@
 from django.db import models
-from app_settings import NO_IMAGE
+from app_settings import NO_IMAGE, NON_WORK
 
 class PortfolioManager(models.Manager):
     def live(self):
@@ -101,7 +101,7 @@ class Project(PortfolioBase):
 	    })
 	else:
 	    return('portfolio:project-detail', (), {
-		'client': 'personal',
+		'client': NON_WORK['slug'],
 		'slug': self.slug,
 	    })
         
