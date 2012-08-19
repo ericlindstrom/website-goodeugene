@@ -137,12 +137,43 @@ a:hover { color:#ec008c; }
 .project_detail #header header h1 span a { font-size:11px; color:#888; }
 .project_detail #header header h1 span a:hover { color:#ec008c; }
 
+.icon { background:url('../img/elements.png') no-repeat 0 0; }
 
 /**********************************************************************************/
 @media only screen and (max-width: 1200px) {
     .container,
     .position { width:960px; }
 }
+
+@media only screen and (max-width: 960px) {
+    .container,
+    .position { width:768px; }
+}
+
+@media only screen and (max-width: 768px) {
+    .container,
+    .position { width:100%; }
+
+    #header header h1, #content h1 { margin-left:20px; }
+
+    #header nav .icon { 
+	float:left; position:relative; 
+	width:20px; height:20px; 
+	opacity:.5;
+	right:20px;
+	top:2px;
+    }
+
+    #header nav .icon:hover { opacity:1; }
+    #header nav ul { display:none; position:absolute; top:0; left:0; }
+
+    .project_detail #media img { margin-bottom:0; }
+
+}
+
+
+/**********************************************************************************/
+
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
