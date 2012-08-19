@@ -164,8 +164,30 @@ a:hover { color:#ec008c; }
 	top:2px;
     }
 
+    .arrow { 
+	border-color:#000 transparent transparent;
+	border-style:solid;
+	border-width:10px;
+	width:0; height:0;
+    }
+
+    .arrow.up { border-color:transparent transparent #FFF; z-index:11; }
+
     #header nav .icon:hover { opacity:1; }
-    #header nav ul { display:none; position:absolute; top:0; left:0; }
+    #header nav .arrow { position:absolute; top:15px; right:20px; }
+    #header nav .shadow { top:14px; border-bottom-color:rgba(0,0,0,.1); z-index:10; }
+
+    #header nav ul { 
+	position:absolute; 
+	top:34px; left:-230px; 
+	background:#FFF; padding:0; 
+	width:240px;
+	border:1px solid rgba(0,0,0,.1);
+	z-index:10;
+    }
+    #header nav ul li { float:left; position:relative; padding:0; margin:0; border-bottom:1px solid rgba(0,0,0,.1); }
+    #header nav ul li:last-child { border:none; }
+    #header nav ul li a { float:left; position:relative; padding:5px 20px; width:200px;}
 
     .project_detail #media img { margin-bottom:0; }
 
