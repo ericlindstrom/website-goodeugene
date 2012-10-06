@@ -13,6 +13,8 @@ urlpatterns = patterns('',
     #url(r'^$', '', name='home'),
     # url(r'^goodeugene/', include('goodeugene.foo.urls')),
     url(r'^portfolio/', include('goodeugene.apps.portfolio.urls', namespace="portfolio")),
+    #url(r'^blog/', include('blog.urls', namespace="blog")),
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

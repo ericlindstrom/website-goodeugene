@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.markup',
     'goodeugene.apps.portfolio',
+    #'blog',
 )
 
 # A sample logging configuration. The only tangible logging

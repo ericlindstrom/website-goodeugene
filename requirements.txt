@@ -3,3 +3,6 @@ django==1.4
 mysql-python
 PIL
 markdown
+psycopg2 
+dj-database-url
+-e git+https://github.com/ericlindstrom/django-blog.git#egg=django-blog
