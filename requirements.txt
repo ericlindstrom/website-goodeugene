@@ -8,4 +8,4 @@ PIL
 django-storages
 boto
 -e git+https://github.com/ericlindstrom/django-blog.git#egg=django-blog
-
+django-coffeescript

@@ -6,6 +6,7 @@
 {# block project_title %}/<span><a href="{{ object.get_absolute_url }}">{{ object.client.name }} {{ object.name }}</a></span>{% endblock project_title #}
 
 {% block portfolio_content %}
+<div id="project_detail" class="container main">
     <h1>
     {% if object.client %}
 	<a href="{{ object.get_absolute_url }}"><span>{{ object.client.name }}</span> {{ object.name }}</a>
@@ -35,5 +36,5 @@
 	{% endfor %}
     </ul>
 
-
+</div>
 {% endblock portfolio_content %}

@@ -3,7 +3,7 @@
 {% block body_class %}{{ block.super }} project_list{% endblock body_class %}
 
 {% block portfolio_content %}
-<div id="project_list">
+<div id="project_list" class="container main">
     {% if project_list %}
 	{#<h1>Projects</h1>#}
 	{% for project in project_list %}

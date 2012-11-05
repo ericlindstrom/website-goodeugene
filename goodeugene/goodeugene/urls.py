@@ -12,15 +12,16 @@ urlpatterns = patterns('',
     # Examples:
     #url(r'^$', '', name='home'),
     # url(r'^goodeugene/', include('goodeugene.foo.urls')),
-    url(r'^portfolio/', include('goodeugene.apps.portfolio.urls', namespace="portfolio")),
+    #url(r'^portfolio/', include('goodeugene.apps.portfolio.urls', namespace="portfolio")),
     #url(r'^blog/', include('blog.urls', namespace="blog")),
-
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('goodeugene.apps.portfolio.urls', namespace="portfolio")),
+
 )
 
 urlpatterns += staticfiles_urlpatterns() + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

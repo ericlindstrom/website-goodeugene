@@ -1,73 +1,57 @@
-{# spaceless #}
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% spaceless %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
-  <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="{{ STATIC_URL }}css/goodeugene.css">
+	<meta charset="utf-8">
+	<title>Eugene Good</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  {% block extra_head %}{% endblock extra_head %}
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <script src="{{ STATIC_URL }}js/libs/modernizr-2.5.3.min.js"></script>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/base.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/skeleton.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/layout.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/goodeugene.css">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 </head>
-
-<body id="default" class="{% block body_class %}{% endblock body_class %}">
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <section id="header">
-    <div class="position">
-	<div class="container">
-	    <header>
-		<h1><a href="/">Eugene Good</a>{% block project_title %}{% endblock project_title %}</h1>
-	    </header>
-
-	    <nav>
-		<a href="#" class="icon"></a>
-		<div class="arrow up"></div>
-		<div class="arrow up shadow"></div>
-		<ul>
-		    <li id="nav_portfolio"><a href="{% url portfolio:index %}">Portfolio</a></li>
-		    <li id="nav_blog"><a href="#">Blog</a></li>
-		    <li id="nav_info"><a href="#">Info</a></li>
-		</ul>
-	    </nav>
-	</div>
+<body class="{% block body_class %}{% endblock body_class%}">
+    <section id="header">
+    <div class="container">
+	<header>
+	    <h1><a href="/">Eugene Good</a>{% block project_title %}{% endblock project_title %}</h1>
+	</header>
+	<nav>
+	    <a href="#" class="icon"></a>
+	    <div class="arrow up"></div>
+	    <div class="arrow up shadow"></div>
+	    <ul>
+		<li id="nav_portfolio"><a href="{% url portfolio:index %}">Portfolio</a></li>
+		<li id="nav_blog"><a href="#">Blog</a></li>
+		<li id="nav_info"><a href="#">Info</a></li>
+	    </ul>
+	</nav>
     </div>
-  </section>
-  <section id="content_wrap">
-    {% block content_wrap %}
-    <div class="position">
-      <div id="content" class="container" role="main">
-	    {% block content %}{% endblock content %}
-      </div>
-    </div>
-    {% endblock content_wrap %}
-  </section>
-  <footer>
+    </section>
 
-  </footer>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"><\/script>')</script>
-  
-  <script src="{{ STATIC_URL }}js/plugins.js"></script>
-  <script src="{{ STATIC_URL }}js/script.js"></script>
-  {% block extra_js %}{% endblock extra_js %}
-
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
+    {% block content %}{% endblock content %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="{{ STATIC_URL }}js/goodeugene.js"></script>
 </body>
 </html>
-{# endspaceless #}
+{% endspaceless %}
