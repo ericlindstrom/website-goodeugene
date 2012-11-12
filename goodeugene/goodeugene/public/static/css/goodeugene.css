@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat&family=Open+Sans:300,400);
+@import url(http://fonts.googleapis.com/css?family=Montserrat&family=Open+Sans:300,400,600);
 body { 
     font-family: 'Open Sans', sans-serif; 
     font-weight:300;
@@ -72,6 +72,23 @@ a:hover { color:#ec008c; }
 #header header h1 { font-size:28px; margin:5px 0; }
 
 .project_list .main ul li { float:left; position:relative; width:32%; margin-right:2%;  }
+
+.project_list .main ul li p,
+.project_list .main ul li p a,
+.project_list .main ul li .thumb,
+.project_list .main ul li .thumb img,
+.project_list .main ul li .info span { float:left; position:relative; }
+
+.project_list .main ul li .info { 
+    float:left; position:relative; 
+    font-size:18px; width:100%; padding-top:10px;
+}
+.project_list .main ul li .info .client_name { }
+.project_list .main ul li .info .project_name {  font-weight:600; margin-left:5px; }
+
+
+
+
 .project_list .main ul li img { max-width:100%; }
 .project_list .main .break1 { margin-right:0;  }
 
@@ -111,7 +128,7 @@ a:hover { color:#ec008c; }
 	border:1px solid rgba(0,0,0,.1);
 	z-index:10;
     }
-    #header nav ul li { float:left; position:relative; padding:0; margin:0; border-bottom:1px solid rgba(0,0,0,.1); }
+    #header nav ul li { float:left; position:relative; padding:0; margin:0; border-bottom:1px solid rgba(0,0,0,.1); width:100%; }
     #header nav ul li:last-child { border:none; }
     #header nav ul li a { float:left; position:relative; padding:5px 20px; width:200px;}
 
@@ -126,9 +143,12 @@ a:hover { color:#ec008c; }
     .project_list .container .break1 { margin-right:4%;  }
     .project_list .container .break2 { margin-right:0;  }
 
+    .project_list .main ul li .info .project_name { margin-left:0; clear:both; }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container { width: 718px; }
+  .project_list .main ul li .info .project_name { margin-left:0; clear:both; }
 
 }

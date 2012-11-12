@@ -19,6 +19,7 @@ class PortfolioBase(models.Model):
 
     class Meta:
 	abstract = True
+	ordering = ['order']
 
     def __unicode__(self):
         return self.name
@@ -136,11 +137,8 @@ class Image(models.Model):
 	elif self.display:
 	    return self.display
 
-
-    
-    
-    #def __unicode__(self):
-    #    return self.thumb
+    class Meta:
+	ordering = ['order']
     
 class Video(models.Model):
     video = models.FileField(upload_to='videos')
