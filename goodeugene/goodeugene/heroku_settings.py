@@ -10,8 +10,8 @@ AWS_ACCESS_KEY_ID = os.environ['S3_KEY']
 AWS_SECRET_ACCESS_KEY = os.environ['S3_SECRET'] 
 AWS_STORAGE_BUCKET_NAME = 'public.goodeugene.com'
 
-STATIC_URL = '//%s/static/' % AWS_STORAGE_BUCKET_NAME
-MEDIA_URL = '//%s/media/' % AWS_STORAGE_BUCKET_NAME
+STATIC_URL = 'http://%s/static/' % AWS_STORAGE_BUCKET_NAME
+MEDIA_URL = 'http://%s/media/' % AWS_STORAGE_BUCKET_NAME
 ADMIN_MEDIA_PREFIX = 'http://%s/admin/' % AWS_STORAGE_BUCKET_NAME
 
 DEFAULT_FILE_STORAGE = 'goodeugene.util.s3.MediaRootS3BotoStorage'
