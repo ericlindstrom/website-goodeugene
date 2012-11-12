@@ -90,15 +90,13 @@ class Project(PortfolioBase):
 
     def get_thumbnail(self):
         thumb = NO_IMAGE['thumbnail']
-	try:
-	    thumb=self.image_set.all()[0].get_image_for_list()
-	except IndexError:
-	    pass
-	#print self.thumbnail
-        #if self.thumbnail: 
-	#    thumb = self.thumbnail
-	#else:
-	#    thumb = self.image_set.all()[0].get_image_for_list()
+	if self.thumbnail:
+	    return self.thumbnail
+	else:
+	    try:
+		thumb=self.image_set.all()[0].get_image_for_list()
+	    except IndexError:
+		pass
 	return thumb
     
     @models.permalink
