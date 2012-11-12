@@ -79,7 +79,7 @@ class Project(PortfolioBase):
     url = models.CharField(max_length=255, blank=True)
     #tags = models.ManyToManyField(Tag, blank=True)
 
-    thumbnail = models.ImageField(upload_to='images/projects/thumb/', blank=True)
+    thumbnail = models.ImageField(upload_to='portfolio/projects/thumb/', blank=True)
 
     
     def project_admin_title(self):
