@@ -8,8 +8,7 @@ DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_ACCESS_KEY_ID = os.environ['S3_KEY']
 AWS_SECRET_ACCESS_KEY = os.environ['S3_SECRET'] 
-#AWS_STORAGE_BUCKET_NAME = 'public.goodeugene.com'
-AWS_STORAGE_BUCKET_NAME = 'public.goodeugene.com.s3.amazonaws.com'
+AWS_STORAGE_BUCKET_NAME = 'public.goodeugene.com'
 AWS_S3_SECURE_URLS = False
 
 STATIC_URL = 'http://%s/static/' % AWS_STORAGE_BUCKET_NAME
