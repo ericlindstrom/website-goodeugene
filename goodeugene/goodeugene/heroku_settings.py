@@ -5,6 +5,9 @@ import dj_database_url
 DEBUG = False
 DATABASES = {'default': dj_database_url.config(default=os.environ['DATABASE_URL'])}
 
+DEFAULT_FILE_STORAGE = 'goodeugene.util.s3.MediaRootS3BotoStorage'
+STATICFILES_STORAGE = 'goodeugene.util.s3.StaticRootS3BotoStorage'
+
 PUBLIC_SITE = 'public.goodeugene.com'
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 AWS_ACCESS_KEY_ID = os.environ['S3_KEY']
@@ -19,5 +22,3 @@ STATIC_URL = 'http://%s/static/' % PUBLIC_SITE
 MEDIA_URL = 'http://%s/media/' % PUBLIC_SITE
 ADMIN_MEDIA_PREFIX = 'http://%s/admin/' % PUBLIC_SITE
 
-DEFAULT_FILE_STORAGE = 'goodeugene.util.s3.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'goodeugene.util.s3.StaticRootS3BotoStorage'
