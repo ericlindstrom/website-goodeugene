@@ -26,7 +26,7 @@
     <div id="media">
 	{% for photo in object.image_set.all %}
 	<a id="{{ forloop.counter }}" class="anchor" ></a>
-	<img src="{{ photo.full_size.url }}">
+	<img src="{{ photo.get_image_for_detail.url }}">
 	{% endfor %}
     </div>
 

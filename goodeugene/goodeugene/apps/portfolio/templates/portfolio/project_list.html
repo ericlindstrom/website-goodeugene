@@ -8,7 +8,7 @@
 	{#<h1>Projects</h1>#}
 	<ul>
 	{% for project in project_list %}
-	    <li class="item {% cycle '' 'break2' 'break1' %}">
+	    <li class="{% cycle '' '' 'break1' %} {% cycle '' 'break2' %}">
 		<a href="{{ project.get_absolute_url }}">
 		    <span class="thumb"><img src="{{ project.get_thumbnail.url }}" /></span>
 		    <span class="info">{{ project.client.name }}<br/>{{ project.name }}</span>

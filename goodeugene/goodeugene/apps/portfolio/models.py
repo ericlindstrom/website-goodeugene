@@ -8,10 +8,9 @@ class PortfolioManager(models.Manager):
     def featured(self):
 	return super(PortfolioManager, self).live(featured=True)
 
-
 class PortfolioBase(models.Model):
-    name = models.CharField(max_length=255)
-    slug = models.SlugField()
+    name = models.CharField(max_length=255, null=True)
+    slug = models.SlugField(null=True, blank=True)
     order = models.IntegerField(default=100)
     visible = models.BooleanField(default=True)
     featured = models.BooleanField(default=True)
@@ -74,7 +73,7 @@ class Credit(models.Model):
 class Project(PortfolioBase):
     client =  models.ForeignKey(Client, blank=True, null=True)
     role = models.ForeignKey(Role, blank=True, null=True)
-    description = models.TextField(blank=True)
+    description = models.TextField(blank=True, null=True)
     category = models.ForeignKey(Category, blank=True, null=True)
     credits = models.ManyToManyField(Credit, blank=True)
     url = models.CharField(max_length=255, blank=True)
@@ -117,9 +116,9 @@ class Project(PortfolioBase):
         
 
 class Image(models.Model):
-    full_size = models.ImageField(upload_to='images/project/full/', blank=True)
-    display = models.ImageField(upload_to='images/project/display/', blank=True)
-    thumb = models.ImageField(upload_to='images/project/thumb/', blank=True)
+    full_size = models.ImageField(upload_to='portfolio/project/full/', blank=True)
+    display = models.ImageField(upload_to='portfolio/project/display/', blank=True)
+    thumb = models.ImageField(upload_to='portfolio/project/thumb/', blank=True)
     title = models.CharField(max_length=255, blank=True)
     order = models.FloatField(default=0)
     project = models.ForeignKey(Project)
@@ -132,6 +131,15 @@ class Image(models.Model):
 	    return self.display
 	elif self.full_size:
 	    return self.full_size
+
+    def get_image_for_detail(self):
+	if self.full_size:
+	    return self.full_size
+	elif self.display:
+	    return self.display
+
+
+    
     
     #def __unicode__(self):
     #    return self.thumb

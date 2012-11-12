@@ -118,7 +118,7 @@ a:hover { color:#ec008c; }
     #header nav ul, #header nav .arrow { display:none; }
     #header nav.open ul, #header nav.open .arrow { display:block; }
 
-    .project_list .container .item {
+    .project_list .container ul li {
 	width:48%;
 	margin-right:4%;
     }
