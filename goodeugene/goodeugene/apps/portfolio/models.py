@@ -90,7 +90,17 @@ class Project(PortfolioBase):
 	return '%s %s' % (self.client.name, self.name,)
 
     def get_thumbnail(self):
-	return self.thumbnail if self.thumbnail else NO_IMAGE['thumbnail']
+        thumb = NO_IMAGE['thumbnail']
+	try:
+	    thumb=self.image_set.all()[0].get_image_for_list()
+	except IndexError:
+	    pass
+	#print self.thumbnail
+        #if self.thumbnail: 
+	#    thumb = self.thumbnail
+	#else:
+	#    thumb = self.image_set.all()[0].get_image_for_list()
+	return thumb
     
     @models.permalink
     def get_absolute_url(self):
@@ -115,6 +125,13 @@ class Image(models.Model):
     project = models.ForeignKey(Project)
 
     #TODO: Reprocess from fullsize
+    def get_image_for_list(self):
+	if self.thumb:
+	    return self.thumb
+	elif self.display:
+	    return self.display
+	elif self.full_size:
+	    return self.full_size
     
     #def __unicode__(self):
     #    return self.thumb

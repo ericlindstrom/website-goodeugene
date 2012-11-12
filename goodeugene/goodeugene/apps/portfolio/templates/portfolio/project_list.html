@@ -6,26 +6,18 @@
 <div id="project_list" class="container main">
     {% if project_list %}
 	{#<h1>Projects</h1>#}
+	<ul>
 	{% for project in project_list %}
-	{% comment %}
-	{% if forloop.first %}<div class="row">{% endif %}
-	{% endcomment %}
-	    <div class="item">
+	    <li class="item {% cycle '' 'break2' 'break1' %}">
 		<a href="{{ project.get_absolute_url }}">
-		    <img src="{{ project.get_thumbnail.url }}" />
-		    {#<br/>{{ project.client.name }}<br/>{{ project.name }}#}
+		    <span class="thumb"><img src="{{ project.get_thumbnail.url }}" /></span>
+		    <span class="info">{{ project.client.name }}<br/>{{ project.name }}</span>
 		</a>
-	    </div>
-	{% comment %}
-	    {% if forloop.counter|divisibleby:4 %}
-	    </div><div class="row">
-	    {% else %}
-		{% if forloop.last %}</div>{% endif %}
-	    {% endif %}
-	{% endcomment %}
+	    </li>
 	{% endfor %}
+	</ul>
     {% else %}
-	<h1>Sheeeeittttt.<br/>You haven't added any projects yet. <a href="/admin/portfolio/">click here to add some.</a></h1>
+	<h1>You haven't added any projects yet. <a href="/admin/portfolio/">click here to add some.</a></h1>
     {% endif %}
 </div>
 {% endblock portfolio_content %}

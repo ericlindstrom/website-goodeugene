@@ -14,7 +14,7 @@
     </h1>
 
     {% if object.description %}
-    <p id="details_link"><a href="#">Details</a></p>
+    {#<p id="details_link"><a href="#">Details</a></p>#}
     <div id="details">
 	{{ object.description|markdown }}
     </div>
@@ -30,11 +30,12 @@
 	{% endfor %}
     </div>
 
+{% comment %}
     <ul class="control">
 	{% for photo in object.image_set.all %}
 	    <li><a href="#{{ forloop.counter }}">{{ forloop.counter }}</a></li>
 	{% endfor %}
     </ul>
-
+{% endcomment %}
 </div>
 {% endblock portfolio_content %}
