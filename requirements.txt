@@ -8,4 +8,6 @@ PIL
 django-storages
 boto
 -e git+https://github.com/ericlindstrom/django-blog.git#egg=django-blog
-django-coffeescript
+pylibmc==1.2.2
+django-pylibmc-sasl==0.2.4
+django-heroku-memcacheify
