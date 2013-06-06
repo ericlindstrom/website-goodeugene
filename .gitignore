@@ -1,8 +1,2 @@
-*.pyc
-*.swp
+_site/
 .DS_Store
-.Python
-bin/
-lib/
-include/
-goodeugene/goodeugene/public/media/
