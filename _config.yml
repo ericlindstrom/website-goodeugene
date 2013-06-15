@@ -1,2 +1,4 @@
 name: Good Eugene
 permalink: pretty
+#paginate: 5
+#paginate_path: "/page:num"
