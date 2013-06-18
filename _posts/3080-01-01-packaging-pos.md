@@ -2,7 +2,7 @@
 layout: page
 title: Old Style Packaging/POS
 type: portfolio
-permalink: /old-style/packaging-pos/
+permalink: /projects/old-style/packaging-pos/
 thumb: /media/images/oldstyle-thumb.jpg
 ---
 

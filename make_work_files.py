@@ -10,7 +10,7 @@ def build_front_matter(item):
 layout: page
 title: %(client)s %(name)s
 type: portfolio
-permalink: /%(client_slug)s/%(slug)s/
+permalink: /projects/%(client_slug)s/%(slug)s/
 thumb: /media/images/%(photo_name)s-thumb.jpg
 ---
 ''' % item

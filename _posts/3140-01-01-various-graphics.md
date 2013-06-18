@@ -2,7 +2,7 @@
 layout: page
 title: Snowboards Various Graphics
 type: portfolio
-permalink: /snowboards/various-graphics/
+permalink: /projects/snowboards/various-graphics/
 thumb: /media/images/snowboards-thumb.jpg
 ---
 

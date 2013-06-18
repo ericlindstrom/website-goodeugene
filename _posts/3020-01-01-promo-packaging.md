@@ -2,7 +2,7 @@
 layout: page
 title: Mitchell & Ness Promo Packaging
 type: portfolio
-permalink: /mitchell-ness/promo-packaging/
+permalink: /projects/mitchell-ness/promo-packaging/
 thumb: /media/images/mjbox-thumb.jpg
 ---
 

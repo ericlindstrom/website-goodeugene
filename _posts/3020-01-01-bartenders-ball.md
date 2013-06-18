@@ -2,7 +2,7 @@
 layout: page
 title: Jameson Bartender's Ball
 type: portfolio
-permalink: /jameson/bartenders-ball/
+permalink: /projects/jameson/bartenders-ball/
 thumb: /media/images/jameson-thumb.jpg
 ---
 

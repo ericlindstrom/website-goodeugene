@@ -2,7 +2,7 @@
 layout: page
 title: Jennifer Lane Packaging
 type: portfolio
-permalink: /jennifer-lane/packaging/
+permalink: /projects/jennifer-lane/packaging/
 thumb: /media/images/jenlane-thumb.jpg
 ---
 

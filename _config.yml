@@ -1,4 +1,4 @@
 name: Good Eugene
-permalink: pretty
+permalink: /minutes/:year/:month/:day/:title/
 #paginate: 5
 #paginate_path: "/page:num"

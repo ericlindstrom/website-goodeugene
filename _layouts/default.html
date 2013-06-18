@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body class="{{ page.type }} {{ page.bodyclass }}">
-
+  </head>
+  <body class="{{ page.type }} {{ page.bodyclass }}">
+    <section>
+      <div class="position">
         <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-     
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+          <header>
+            <h2><a href="/">{{ site.name }}</a></h2>
+            <nav>
+              <ul>
+                <li><a href="/projects/">Projects</a></li>
+		<li><a href="/minutes/">Minutes</a></li>
+                <li><a href="/info/">Info</a></li>
+              </ul>
+            </nav>
+          </header>
+	</div><!-- .container -->
+      </div><!-- .position -->
+    </section>
+    <section class="content_wrap">
+      <div class="position">
+        <div id="content" role="main" class="container">
+	  {{ content }}
+	</div><!-- .container -->
+      </div><!-- .position -->
+    </section>
+    <footer></footer>
+  </body>
 </html>

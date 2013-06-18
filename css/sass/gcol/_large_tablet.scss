@@ -1,0 +1,16 @@
+/**
+ *  @file: gcol/_large_tablet.scss
+ */
+
+._col3, ._column3, .gcol3, .gcolumn3 {
+  &.__21, &._321 {
+    .column, .col {
+      width: (100% - ($gutter*2)) *.3333334;
+      &:nth-child(3n) { margin-right:0; }
+      &:nth-child(3n+1) { clear:both; }
+      &:nth-child(2n) { margin-right:$gutter; }
+      &:nth-child(2n+1) { clear:none; }
+    }
+  }
+} // end of 3 column grid
+

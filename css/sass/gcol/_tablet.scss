@@ -1,0 +1,73 @@
+/**
+ *  @file: gcol/_tablet.scss
+ */
+
+/**
+ * column2 default: 2221
+ */
+._col2, ._column2, .gcol2, .gcolumn2 {
+  &> .column, &> .col {
+    width: (100% - $gutter) *.5;
+    &:nth-child(2n) { margin-right:0; }
+    &:nth-child(2n+1) { clear:both; }
+  }
+} // end of 2 column grid
+
+/**
+ *  column4 default: 3331
+ */
+._col3, ._column3, .gcol3, .gcolumn3 {
+  &> .column, &> .col {
+    width: (100% - ($gutter*2)) *.3333334;
+    &:nth-child(3n) { margin-right:0; }
+    &:nth-child(3n+1) { clear:both; }
+  }
+
+  &._321, &.__21 {
+    .column, .col {
+      width: (100% - ($gutter)) *.5;
+      &:nth-child(3n) { margin-right:$gutter; }
+      &:nth-child(3n+1) { clear:none; }
+      &:nth-child(2n) { margin-right:0; }
+      &:nth-child(2n+1) { clear:both; }
+
+    }
+  }
+} // end of 3 column grid
+
+
+/**
+ *  column4 default: 4441
+ */
+._col4, ._column4, .gcol4, .gcolumn4 {
+
+  &.___2 .column,
+  &.___1 .column,
+  &.___1 .col,
+  &> .column, &> .col { 
+    width:(100% - ($gutter*3)) *.25; 
+    &:nth-child(2n+1) { margin-right:$gutter; clear:none; }
+    &:nth-child(2n) { margin-right:$gutter; }
+    &:nth-child(3n+1) { clear:none; }
+    &:nth-child(3n) { clear:none; }
+    &:nth-child(4n+1) { clear:both; }
+    &:nth-child(4n), 
+    &:last-child { margin-right:0;}
+
+  }
+
+  /**
+   *  Break at 2 column for tablet
+   */
+  &._222, &._2__, &._221, &._2_1 {
+    .column, .col {
+      width: (100% - $gutter) *.5;
+      &:nth-child(4n+1) { clear:none; }
+      &:nth-child(2n+1) { clear:both; }
+
+      &:nth-child(2n), 
+      &:nth-child(4n), 
+      &:last-child { margin-right:0; }
+    }
+  }
+} // end of 4 column grid

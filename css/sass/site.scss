@@ -1,0 +1,32 @@
+$break_tablet: 600px;
+$break_large_tablet: 768px;
+$break_desktop: 1000px;
+$space: 1em;
+$gutter: 3%;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+// Base
+@import "gcol/base";
+@import "site/base";
+
+// Tablet
+@media screen and (min-width:$break_tablet) {
+  @import "gcol/tablet";
+  @import "site/tablet";
+}
+
+// Large Tablet
+@media screen and (min-width:$break_large_tablet) {
+  @import "gcol/large_tablet";
+  @import "site/large_tablet";
+}
+
+// Desktop
+@media screen and (min-width:$break_desktop) {
+  @import "gcol/desktop";
+  @import "site/desktop";
+}

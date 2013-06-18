@@ -2,7 +2,7 @@
 layout: page
 title: Kawasaki Greenlight Event
 type: portfolio
-permalink: /kawasaki/greenlight-event/
+permalink: /projects/kawasaki/greenlight-event/
 thumb: /media/images/Kawasakigreenlight-thumb.jpg
 ---
 

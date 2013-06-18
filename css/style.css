@@ -1,0 +1,266 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ *  @file: gcol/_base.scss
+ */
+/* Possible cases.
+
+=============
+2 COLUMN GRID
+=============
+_column2      [x]
+_column2 ___1 [x]
+_column2 _221 [x]
+_column2 _2_1 [x]
+_column2 ____ [x]
+_column2 _222 [x]
+_column2 _2__ [x]
+_column2 ___2 [x]
+
+===================
+3 COLUMN GRID: 3331
+===================
+_column3      [x]
+_column3 _331 [x]
+_column3 ___1 [x]
+_column3 ____ [x]
+_column3 _333 [x]
+_column3 _3__ [x]
+_column3 __21 [ ]
+_column3 __22 [ ]
+_column3 __2_ [ ]
+
+
+
+
+=============
+4 COLUMN GRID
+=============
+_column4      [x]
+_column4 ___1 [x]
+_column4 ____ [ ]
+_column4 _221 [x]
+_column4 _2_1 [x]
+_column4 _2__ [x]
+_column4 ___2 [ ]
+
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+._col2 > .column, ._col2 > .col, ._column2 > .column, ._column2 > .col, .gcol2 > .column, .gcol2 > .col, .gcolumn2 > .column, .gcolumn2 > .col,
+._col3 > .column,
+._col3 > .col, ._column3 > .column, ._column3 > .col, .gcol3 > .column, .gcol3 > .col, .gcolumn3 > .column, .gcolumn3 > .col,
+._col4 > .column,
+._col4 > .col, ._column4 > .column, ._column4 > .col, .gcol4 > .column, .gcol4 > .col, .gcolumn4 > .column, .gcolumn4 > .col,
+.gcol > .column,
+.gcol > .col, ._col > .column, ._col > .col, ._column > .column, ._column > .col, .gcolumn > .column, .gcolumn > .col {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-right: 3%; }
+
+/**
+ *  column2 default: _221
+ */
+._col2._222 .column, ._col2._222 .col, ._col2._2__ .column, ._col2._2__ .col, ._column2._222 .column, ._column2._222 .col, ._column2._2__ .column, ._column2._2__ .col, .gcol2._222 .column, .gcol2._222 .col, .gcol2._2__ .column, .gcol2._2__ .col, .gcolumn2._222 .column, .gcolumn2._222 .col, .gcolumn2._2__ .column, .gcolumn2._2__ .col,
+._col4._222 .column,
+._col4._222 .col,
+._col4._2__ .column,
+._col4._2__ .col, ._column4._222 .column, ._column4._222 .col, ._column4._2__ .column, ._column4._2__ .col, .gcol4._222 .column, .gcol4._222 .col, .gcol4._2__ .column, .gcol4._2__ .col, .gcolumn4._222 .column, .gcolumn4._222 .col, .gcolumn4._2__ .column, .gcolumn4._2__ .col {
+  width: 48.5%; }
+  ._col2._222 .column:nth-child(2n), ._col2._222 .col:nth-child(2n), ._col2._2__ .column:nth-child(2n), ._col2._2__ .col:nth-child(2n), ._column2._222 .column:nth-child(2n), ._column2._222 .col:nth-child(2n), ._column2._2__ .column:nth-child(2n), ._column2._2__ .col:nth-child(2n), .gcol2._222 .column:nth-child(2n), .gcol2._222 .col:nth-child(2n), .gcol2._2__ .column:nth-child(2n), .gcol2._2__ .col:nth-child(2n), .gcolumn2._222 .column:nth-child(2n), .gcolumn2._222 .col:nth-child(2n), .gcolumn2._2__ .column:nth-child(2n), .gcolumn2._2__ .col:nth-child(2n),
+  ._col4._222 .column:nth-child(2n),
+  ._col4._222 .col:nth-child(2n),
+  ._col4._2__ .column:nth-child(2n),
+  ._col4._2__ .col:nth-child(2n), ._column4._222 .column:nth-child(2n), ._column4._222 .col:nth-child(2n), ._column4._2__ .column:nth-child(2n), ._column4._2__ .col:nth-child(2n), .gcol4._222 .column:nth-child(2n), .gcol4._222 .col:nth-child(2n), .gcol4._2__ .column:nth-child(2n), .gcol4._2__ .col:nth-child(2n), .gcolumn4._222 .column:nth-child(2n), .gcolumn4._222 .col:nth-child(2n), .gcolumn4._2__ .column:nth-child(2n), .gcolumn4._2__ .col:nth-child(2n) {
+    margin-right: 0; }
+  ._col2._222 .column:nth-child(2n+1), ._col2._222 .col:nth-child(2n+1), ._col2._2__ .column:nth-child(2n+1), ._col2._2__ .col:nth-child(2n+1), ._column2._222 .column:nth-child(2n+1), ._column2._222 .col:nth-child(2n+1), ._column2._2__ .column:nth-child(2n+1), ._column2._2__ .col:nth-child(2n+1), .gcol2._222 .column:nth-child(2n+1), .gcol2._222 .col:nth-child(2n+1), .gcol2._2__ .column:nth-child(2n+1), .gcol2._2__ .col:nth-child(2n+1), .gcolumn2._222 .column:nth-child(2n+1), .gcolumn2._222 .col:nth-child(2n+1), .gcolumn2._2__ .column:nth-child(2n+1), .gcolumn2._2__ .col:nth-child(2n+1),
+  ._col4._222 .column:nth-child(2n+1),
+  ._col4._222 .col:nth-child(2n+1),
+  ._col4._2__ .column:nth-child(2n+1),
+  ._col4._2__ .col:nth-child(2n+1), ._column4._222 .column:nth-child(2n+1), ._column4._222 .col:nth-child(2n+1), ._column4._2__ .column:nth-child(2n+1), ._column4._2__ .col:nth-child(2n+1), .gcol4._222 .column:nth-child(2n+1), .gcol4._222 .col:nth-child(2n+1), .gcol4._2__ .column:nth-child(2n+1), .gcol4._2__ .col:nth-child(2n+1), .gcolumn4._222 .column:nth-child(2n+1), .gcolumn4._222 .col:nth-child(2n+1), .gcolumn4._2__ .column:nth-child(2n+1), .gcolumn4._2__ .col:nth-child(2n+1) {
+    clear: both; }
+
+._column4.___2 .column, ._column4.___2 .col, ._column4.____ .column, ._column4.____ .col, ._column4._222 .column, ._column4._222 .col, ._column4._2__ .column, ._column4._2__ .col,
+._col2.___2 .column,
+._col2.___2 .col,
+._col2.____ .column,
+._col2.____ .col,
+._col2._222 .column,
+._col2._222 .col,
+._col2._2__ .column,
+._col2._2__ .col, ._column2.___2 .column, ._column2.___2 .col, ._column2.____ .column, ._column2.____ .col, ._column2._222 .column, ._column2._222 .col, ._column2._2__ .column, ._column2._2__ .col, .gcol2.___2 .column, .gcol2.___2 .col, .gcol2.____ .column, .gcol2.____ .col, .gcol2._222 .column, .gcol2._222 .col, .gcol2._2__ .column, .gcol2._2__ .col, .gcolumn2.___2 .column, .gcolumn2.___2 .col, .gcolumn2.____ .column, .gcolumn2.____ .col, .gcolumn2._222 .column, .gcolumn2._222 .col, .gcolumn2._2__ .column, .gcolumn2._2__ .col {
+  width: 48.5%; }
+  ._column4.___2 .column:nth-child(2n), ._column4.___2 .col:nth-child(2n), ._column4.____ .column:nth-child(2n), ._column4.____ .col:nth-child(2n), ._column4._222 .column:nth-child(2n), ._column4._222 .col:nth-child(2n), ._column4._2__ .column:nth-child(2n), ._column4._2__ .col:nth-child(2n),
+  ._col2.___2 .column:nth-child(2n),
+  ._col2.___2 .col:nth-child(2n),
+  ._col2.____ .column:nth-child(2n),
+  ._col2.____ .col:nth-child(2n),
+  ._col2._222 .column:nth-child(2n),
+  ._col2._222 .col:nth-child(2n),
+  ._col2._2__ .column:nth-child(2n),
+  ._col2._2__ .col:nth-child(2n), ._column2.___2 .column:nth-child(2n), ._column2.___2 .col:nth-child(2n), ._column2.____ .column:nth-child(2n), ._column2.____ .col:nth-child(2n), ._column2._222 .column:nth-child(2n), ._column2._222 .col:nth-child(2n), ._column2._2__ .column:nth-child(2n), ._column2._2__ .col:nth-child(2n), .gcol2.___2 .column:nth-child(2n), .gcol2.___2 .col:nth-child(2n), .gcol2.____ .column:nth-child(2n), .gcol2.____ .col:nth-child(2n), .gcol2._222 .column:nth-child(2n), .gcol2._222 .col:nth-child(2n), .gcol2._2__ .column:nth-child(2n), .gcol2._2__ .col:nth-child(2n), .gcolumn2.___2 .column:nth-child(2n), .gcolumn2.___2 .col:nth-child(2n), .gcolumn2.____ .column:nth-child(2n), .gcolumn2.____ .col:nth-child(2n), .gcolumn2._222 .column:nth-child(2n), .gcolumn2._222 .col:nth-child(2n), .gcolumn2._2__ .column:nth-child(2n), .gcolumn2._2__ .col:nth-child(2n) {
+    margin-right: 0; }
+  ._column4.___2 .column:nth-child(2n+1), ._column4.___2 .col:nth-child(2n+1), ._column4.____ .column:nth-child(2n+1), ._column4.____ .col:nth-child(2n+1), ._column4._222 .column:nth-child(2n+1), ._column4._222 .col:nth-child(2n+1), ._column4._2__ .column:nth-child(2n+1), ._column4._2__ .col:nth-child(2n+1),
+  ._col2.___2 .column:nth-child(2n+1),
+  ._col2.___2 .col:nth-child(2n+1),
+  ._col2.____ .column:nth-child(2n+1),
+  ._col2.____ .col:nth-child(2n+1),
+  ._col2._222 .column:nth-child(2n+1),
+  ._col2._222 .col:nth-child(2n+1),
+  ._col2._2__ .column:nth-child(2n+1),
+  ._col2._2__ .col:nth-child(2n+1), ._column2.___2 .column:nth-child(2n+1), ._column2.___2 .col:nth-child(2n+1), ._column2.____ .column:nth-child(2n+1), ._column2.____ .col:nth-child(2n+1), ._column2._222 .column:nth-child(2n+1), ._column2._222 .col:nth-child(2n+1), ._column2._2__ .column:nth-child(2n+1), ._column2._2__ .col:nth-child(2n+1), .gcol2.___2 .column:nth-child(2n+1), .gcol2.___2 .col:nth-child(2n+1), .gcol2.____ .column:nth-child(2n+1), .gcol2.____ .col:nth-child(2n+1), .gcol2._222 .column:nth-child(2n+1), .gcol2._222 .col:nth-child(2n+1), .gcol2._2__ .column:nth-child(2n+1), .gcol2._2__ .col:nth-child(2n+1), .gcolumn2.___2 .column:nth-child(2n+1), .gcolumn2.___2 .col:nth-child(2n+1), .gcolumn2.____ .column:nth-child(2n+1), .gcolumn2.____ .col:nth-child(2n+1), .gcolumn2._222 .column:nth-child(2n+1), .gcolumn2._222 .col:nth-child(2n+1), .gcolumn2._2__ .column:nth-child(2n+1), .gcolumn2._2__ .col:nth-child(2n+1) {
+    clear: both; }
+
+._col3.____ .column, ._col3.____ .col, ._col3._333 .column, ._col3._333 .col, ._col3._3__ .column, ._col3._3__ .col, ._column3.____ .column, ._column3.____ .col, ._column3._333 .column, ._column3._333 .col, ._column3._3__ .column, ._column3._3__ .col, .gcol3.____ .column, .gcol3.____ .col, .gcol3._333 .column, .gcol3._333 .col, .gcol3._3__ .column, .gcol3._3__ .col, .gcolumn3.____ .column, .gcolumn3.____ .col, .gcolumn3._333 .column, .gcolumn3._333 .col, .gcolumn3._3__ .column, .gcolumn3._3__ .col {
+  width: 31.33334%; }
+  ._col3.____ .column:nth-child(3n), ._col3.____ .col:nth-child(3n), ._col3._333 .column:nth-child(3n), ._col3._333 .col:nth-child(3n), ._col3._3__ .column:nth-child(3n), ._col3._3__ .col:nth-child(3n), ._column3.____ .column:nth-child(3n), ._column3.____ .col:nth-child(3n), ._column3._333 .column:nth-child(3n), ._column3._333 .col:nth-child(3n), ._column3._3__ .column:nth-child(3n), ._column3._3__ .col:nth-child(3n), .gcol3.____ .column:nth-child(3n), .gcol3.____ .col:nth-child(3n), .gcol3._333 .column:nth-child(3n), .gcol3._333 .col:nth-child(3n), .gcol3._3__ .column:nth-child(3n), .gcol3._3__ .col:nth-child(3n), .gcolumn3.____ .column:nth-child(3n), .gcolumn3.____ .col:nth-child(3n), .gcolumn3._333 .column:nth-child(3n), .gcolumn3._333 .col:nth-child(3n), .gcolumn3._3__ .column:nth-child(3n), .gcolumn3._3__ .col:nth-child(3n) {
+    margin-right: 0; }
+  ._col3.____ .column:nth-child(3n+1), ._col3.____ .col:nth-child(3n+1), ._col3._333 .column:nth-child(3n+1), ._col3._333 .col:nth-child(3n+1), ._col3._3__ .column:nth-child(3n+1), ._col3._3__ .col:nth-child(3n+1), ._column3.____ .column:nth-child(3n+1), ._column3.____ .col:nth-child(3n+1), ._column3._333 .column:nth-child(3n+1), ._column3._333 .col:nth-child(3n+1), ._column3._3__ .column:nth-child(3n+1), ._column3._3__ .col:nth-child(3n+1), .gcol3.____ .column:nth-child(3n+1), .gcol3.____ .col:nth-child(3n+1), .gcol3._333 .column:nth-child(3n+1), .gcol3._333 .col:nth-child(3n+1), .gcol3._3__ .column:nth-child(3n+1), .gcol3._3__ .col:nth-child(3n+1), .gcolumn3.____ .column:nth-child(3n+1), .gcolumn3.____ .col:nth-child(3n+1), .gcolumn3._333 .column:nth-child(3n+1), .gcolumn3._333 .col:nth-child(3n+1), .gcolumn3._3__ .column:nth-child(3n+1), .gcolumn3._3__ .col:nth-child(3n+1) {
+    clear: both; }
+
+._col4.____ .column, ._col4.____ .col, ._col4._444 .column, ._col4._444 .col, ._col4._4__ .column, ._col4._4__ .col, ._column4.____ .column, ._column4.____ .col, ._column4._444 .column, ._column4._444 .col, ._column4._4__ .column, ._column4._4__ .col, .gcol4.____ .column, .gcol4.____ .col, .gcol4._444 .column, .gcol4._444 .col, .gcol4._4__ .column, .gcol4._4__ .col, .gcolumn4.____ .column, .gcolumn4.____ .col, .gcolumn4._444 .column, .gcolumn4._444 .col, .gcolumn4._4__ .column, .gcolumn4._4__ .col {
+  width: 22.75%; }
+  ._col4.____ .column:nth-child(4n), ._col4.____ .col:nth-child(4n), ._col4._444 .column:nth-child(4n), ._col4._444 .col:nth-child(4n), ._col4._4__ .column:nth-child(4n), ._col4._4__ .col:nth-child(4n), ._column4.____ .column:nth-child(4n), ._column4.____ .col:nth-child(4n), ._column4._444 .column:nth-child(4n), ._column4._444 .col:nth-child(4n), ._column4._4__ .column:nth-child(4n), ._column4._4__ .col:nth-child(4n), .gcol4.____ .column:nth-child(4n), .gcol4.____ .col:nth-child(4n), .gcol4._444 .column:nth-child(4n), .gcol4._444 .col:nth-child(4n), .gcol4._4__ .column:nth-child(4n), .gcol4._4__ .col:nth-child(4n), .gcolumn4.____ .column:nth-child(4n), .gcolumn4.____ .col:nth-child(4n), .gcolumn4._444 .column:nth-child(4n), .gcolumn4._444 .col:nth-child(4n), .gcolumn4._4__ .column:nth-child(4n), .gcolumn4._4__ .col:nth-child(4n) {
+    margin-right: 0; }
+  ._col4.____ .column:nth-child(4n+1), ._col4.____ .col:nth-child(4n+1), ._col4._444 .column:nth-child(4n+1), ._col4._444 .col:nth-child(4n+1), ._col4._4__ .column:nth-child(4n+1), ._col4._4__ .col:nth-child(4n+1), ._column4.____ .column:nth-child(4n+1), ._column4.____ .col:nth-child(4n+1), ._column4._444 .column:nth-child(4n+1), ._column4._444 .col:nth-child(4n+1), ._column4._4__ .column:nth-child(4n+1), ._column4._4__ .col:nth-child(4n+1), .gcol4.____ .column:nth-child(4n+1), .gcol4.____ .col:nth-child(4n+1), .gcol4._444 .column:nth-child(4n+1), .gcol4._444 .col:nth-child(4n+1), .gcol4._4__ .column:nth-child(4n+1), .gcol4._4__ .col:nth-child(4n+1), .gcolumn4.____ .column:nth-child(4n+1), .gcolumn4.____ .col:nth-child(4n+1), .gcolumn4._444 .column:nth-child(4n+1), .gcolumn4._444 .col:nth-child(4n+1), .gcolumn4._4__ .column:nth-child(4n+1), .gcolumn4._4__ .col:nth-child(4n+1) {
+    clear: both; }
+
+/**
+ *  @file: site/base
+ */
+#content img {
+  width: 100%; }
+
+.position {
+  margin: 0 auto; }
+
+.container {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 0 1em; }
+
+@media screen and (min-width: 600px) {
+  /**
+   *  @file: gcol/_tablet.scss
+   */
+  /**
+   * column2 default: 2221
+   */
+  ._col2 > .column, ._col2 > .col, ._column2 > .column, ._column2 > .col, .gcol2 > .column, .gcol2 > .col, .gcolumn2 > .column, .gcolumn2 > .col {
+    width: 48.5%; }
+    ._col2 > .column:nth-child(2n), ._col2 > .col:nth-child(2n), ._column2 > .column:nth-child(2n), ._column2 > .col:nth-child(2n), .gcol2 > .column:nth-child(2n), .gcol2 > .col:nth-child(2n), .gcolumn2 > .column:nth-child(2n), .gcolumn2 > .col:nth-child(2n) {
+      margin-right: 0; }
+    ._col2 > .column:nth-child(2n+1), ._col2 > .col:nth-child(2n+1), ._column2 > .column:nth-child(2n+1), ._column2 > .col:nth-child(2n+1), .gcol2 > .column:nth-child(2n+1), .gcol2 > .col:nth-child(2n+1), .gcolumn2 > .column:nth-child(2n+1), .gcolumn2 > .col:nth-child(2n+1) {
+      clear: both; }
+
+  /**
+   *  column4 default: 3331
+   */
+  ._col3 > .column, ._col3 > .col, ._column3 > .column, ._column3 > .col, .gcol3 > .column, .gcol3 > .col, .gcolumn3 > .column, .gcolumn3 > .col {
+    width: 31.33334%; }
+    ._col3 > .column:nth-child(3n), ._col3 > .col:nth-child(3n), ._column3 > .column:nth-child(3n), ._column3 > .col:nth-child(3n), .gcol3 > .column:nth-child(3n), .gcol3 > .col:nth-child(3n), .gcolumn3 > .column:nth-child(3n), .gcolumn3 > .col:nth-child(3n) {
+      margin-right: 0; }
+    ._col3 > .column:nth-child(3n+1), ._col3 > .col:nth-child(3n+1), ._column3 > .column:nth-child(3n+1), ._column3 > .col:nth-child(3n+1), .gcol3 > .column:nth-child(3n+1), .gcol3 > .col:nth-child(3n+1), .gcolumn3 > .column:nth-child(3n+1), .gcolumn3 > .col:nth-child(3n+1) {
+      clear: both; }
+  ._col3._321 .column, ._col3._321 .col, ._col3.__21 .column, ._col3.__21 .col, ._column3._321 .column, ._column3._321 .col, ._column3.__21 .column, ._column3.__21 .col, .gcol3._321 .column, .gcol3._321 .col, .gcol3.__21 .column, .gcol3.__21 .col, .gcolumn3._321 .column, .gcolumn3._321 .col, .gcolumn3.__21 .column, .gcolumn3.__21 .col {
+    width: 48.5%; }
+    ._col3._321 .column:nth-child(3n), ._col3._321 .col:nth-child(3n), ._col3.__21 .column:nth-child(3n), ._col3.__21 .col:nth-child(3n), ._column3._321 .column:nth-child(3n), ._column3._321 .col:nth-child(3n), ._column3.__21 .column:nth-child(3n), ._column3.__21 .col:nth-child(3n), .gcol3._321 .column:nth-child(3n), .gcol3._321 .col:nth-child(3n), .gcol3.__21 .column:nth-child(3n), .gcol3.__21 .col:nth-child(3n), .gcolumn3._321 .column:nth-child(3n), .gcolumn3._321 .col:nth-child(3n), .gcolumn3.__21 .column:nth-child(3n), .gcolumn3.__21 .col:nth-child(3n) {
+      margin-right: 3%; }
+    ._col3._321 .column:nth-child(3n+1), ._col3._321 .col:nth-child(3n+1), ._col3.__21 .column:nth-child(3n+1), ._col3.__21 .col:nth-child(3n+1), ._column3._321 .column:nth-child(3n+1), ._column3._321 .col:nth-child(3n+1), ._column3.__21 .column:nth-child(3n+1), ._column3.__21 .col:nth-child(3n+1), .gcol3._321 .column:nth-child(3n+1), .gcol3._321 .col:nth-child(3n+1), .gcol3.__21 .column:nth-child(3n+1), .gcol3.__21 .col:nth-child(3n+1), .gcolumn3._321 .column:nth-child(3n+1), .gcolumn3._321 .col:nth-child(3n+1), .gcolumn3.__21 .column:nth-child(3n+1), .gcolumn3.__21 .col:nth-child(3n+1) {
+      clear: none; }
+    ._col3._321 .column:nth-child(2n), ._col3._321 .col:nth-child(2n), ._col3.__21 .column:nth-child(2n), ._col3.__21 .col:nth-child(2n), ._column3._321 .column:nth-child(2n), ._column3._321 .col:nth-child(2n), ._column3.__21 .column:nth-child(2n), ._column3.__21 .col:nth-child(2n), .gcol3._321 .column:nth-child(2n), .gcol3._321 .col:nth-child(2n), .gcol3.__21 .column:nth-child(2n), .gcol3.__21 .col:nth-child(2n), .gcolumn3._321 .column:nth-child(2n), .gcolumn3._321 .col:nth-child(2n), .gcolumn3.__21 .column:nth-child(2n), .gcolumn3.__21 .col:nth-child(2n) {
+      margin-right: 0; }
+    ._col3._321 .column:nth-child(2n+1), ._col3._321 .col:nth-child(2n+1), ._col3.__21 .column:nth-child(2n+1), ._col3.__21 .col:nth-child(2n+1), ._column3._321 .column:nth-child(2n+1), ._column3._321 .col:nth-child(2n+1), ._column3.__21 .column:nth-child(2n+1), ._column3.__21 .col:nth-child(2n+1), .gcol3._321 .column:nth-child(2n+1), .gcol3._321 .col:nth-child(2n+1), .gcol3.__21 .column:nth-child(2n+1), .gcol3.__21 .col:nth-child(2n+1), .gcolumn3._321 .column:nth-child(2n+1), .gcolumn3._321 .col:nth-child(2n+1), .gcolumn3.__21 .column:nth-child(2n+1), .gcolumn3.__21 .col:nth-child(2n+1) {
+      clear: both; }
+
+  /**
+   *  column4 default: 4441
+   */
+  ._col4, ._column4, .gcol4, .gcolumn4 {
+    /**
+     *  Break at 2 column for tablet
+     */ }
+    ._col4.___2 .column, ._col4.___1 .column, ._col4.___1 .col, ._col4 > .column, ._col4 > .col, ._column4.___2 .column, ._column4.___1 .column, ._column4.___1 .col, ._column4 > .column, ._column4 > .col, .gcol4.___2 .column, .gcol4.___1 .column, .gcol4.___1 .col, .gcol4 > .column, .gcol4 > .col, .gcolumn4.___2 .column, .gcolumn4.___1 .column, .gcolumn4.___1 .col, .gcolumn4 > .column, .gcolumn4 > .col {
+      width: 22.75%; }
+      ._col4.___2 .column:nth-child(2n+1), ._col4.___1 .column:nth-child(2n+1), ._col4.___1 .col:nth-child(2n+1), ._col4 > .column:nth-child(2n+1), ._col4 > .col:nth-child(2n+1), ._column4.___2 .column:nth-child(2n+1), ._column4.___1 .column:nth-child(2n+1), ._column4.___1 .col:nth-child(2n+1), ._column4 > .column:nth-child(2n+1), ._column4 > .col:nth-child(2n+1), .gcol4.___2 .column:nth-child(2n+1), .gcol4.___1 .column:nth-child(2n+1), .gcol4.___1 .col:nth-child(2n+1), .gcol4 > .column:nth-child(2n+1), .gcol4 > .col:nth-child(2n+1), .gcolumn4.___2 .column:nth-child(2n+1), .gcolumn4.___1 .column:nth-child(2n+1), .gcolumn4.___1 .col:nth-child(2n+1), .gcolumn4 > .column:nth-child(2n+1), .gcolumn4 > .col:nth-child(2n+1) {
+        margin-right: 3%;
+        clear: none; }
+      ._col4.___2 .column:nth-child(2n), ._col4.___1 .column:nth-child(2n), ._col4.___1 .col:nth-child(2n), ._col4 > .column:nth-child(2n), ._col4 > .col:nth-child(2n), ._column4.___2 .column:nth-child(2n), ._column4.___1 .column:nth-child(2n), ._column4.___1 .col:nth-child(2n), ._column4 > .column:nth-child(2n), ._column4 > .col:nth-child(2n), .gcol4.___2 .column:nth-child(2n), .gcol4.___1 .column:nth-child(2n), .gcol4.___1 .col:nth-child(2n), .gcol4 > .column:nth-child(2n), .gcol4 > .col:nth-child(2n), .gcolumn4.___2 .column:nth-child(2n), .gcolumn4.___1 .column:nth-child(2n), .gcolumn4.___1 .col:nth-child(2n), .gcolumn4 > .column:nth-child(2n), .gcolumn4 > .col:nth-child(2n) {
+        margin-right: 3%; }
+      ._col4.___2 .column:nth-child(3n+1), ._col4.___1 .column:nth-child(3n+1), ._col4.___1 .col:nth-child(3n+1), ._col4 > .column:nth-child(3n+1), ._col4 > .col:nth-child(3n+1), ._column4.___2 .column:nth-child(3n+1), ._column4.___1 .column:nth-child(3n+1), ._column4.___1 .col:nth-child(3n+1), ._column4 > .column:nth-child(3n+1), ._column4 > .col:nth-child(3n+1), .gcol4.___2 .column:nth-child(3n+1), .gcol4.___1 .column:nth-child(3n+1), .gcol4.___1 .col:nth-child(3n+1), .gcol4 > .column:nth-child(3n+1), .gcol4 > .col:nth-child(3n+1), .gcolumn4.___2 .column:nth-child(3n+1), .gcolumn4.___1 .column:nth-child(3n+1), .gcolumn4.___1 .col:nth-child(3n+1), .gcolumn4 > .column:nth-child(3n+1), .gcolumn4 > .col:nth-child(3n+1) {
+        clear: none; }
+      ._col4.___2 .column:nth-child(3n), ._col4.___1 .column:nth-child(3n), ._col4.___1 .col:nth-child(3n), ._col4 > .column:nth-child(3n), ._col4 > .col:nth-child(3n), ._column4.___2 .column:nth-child(3n), ._column4.___1 .column:nth-child(3n), ._column4.___1 .col:nth-child(3n), ._column4 > .column:nth-child(3n), ._column4 > .col:nth-child(3n), .gcol4.___2 .column:nth-child(3n), .gcol4.___1 .column:nth-child(3n), .gcol4.___1 .col:nth-child(3n), .gcol4 > .column:nth-child(3n), .gcol4 > .col:nth-child(3n), .gcolumn4.___2 .column:nth-child(3n), .gcolumn4.___1 .column:nth-child(3n), .gcolumn4.___1 .col:nth-child(3n), .gcolumn4 > .column:nth-child(3n), .gcolumn4 > .col:nth-child(3n) {
+        clear: none; }
+      ._col4.___2 .column:nth-child(4n+1), ._col4.___1 .column:nth-child(4n+1), ._col4.___1 .col:nth-child(4n+1), ._col4 > .column:nth-child(4n+1), ._col4 > .col:nth-child(4n+1), ._column4.___2 .column:nth-child(4n+1), ._column4.___1 .column:nth-child(4n+1), ._column4.___1 .col:nth-child(4n+1), ._column4 > .column:nth-child(4n+1), ._column4 > .col:nth-child(4n+1), .gcol4.___2 .column:nth-child(4n+1), .gcol4.___1 .column:nth-child(4n+1), .gcol4.___1 .col:nth-child(4n+1), .gcol4 > .column:nth-child(4n+1), .gcol4 > .col:nth-child(4n+1), .gcolumn4.___2 .column:nth-child(4n+1), .gcolumn4.___1 .column:nth-child(4n+1), .gcolumn4.___1 .col:nth-child(4n+1), .gcolumn4 > .column:nth-child(4n+1), .gcolumn4 > .col:nth-child(4n+1) {
+        clear: both; }
+      ._col4.___2 .column:nth-child(4n), ._col4.___2 .column:last-child, ._col4.___1 .column:nth-child(4n), ._col4.___1 .column:last-child, ._col4.___1 .col:nth-child(4n), ._col4.___1 .col:last-child, ._col4 > .column:nth-child(4n), ._col4 > .column:last-child, ._col4 > .col:nth-child(4n), ._col4 > .col:last-child, ._column4.___2 .column:nth-child(4n), ._column4.___2 .column:last-child, ._column4.___1 .column:nth-child(4n), ._column4.___1 .column:last-child, ._column4.___1 .col:nth-child(4n), ._column4.___1 .col:last-child, ._column4 > .column:nth-child(4n), ._column4 > .column:last-child, ._column4 > .col:nth-child(4n), ._column4 > .col:last-child, .gcol4.___2 .column:nth-child(4n), .gcol4.___2 .column:last-child, .gcol4.___1 .column:nth-child(4n), .gcol4.___1 .column:last-child, .gcol4.___1 .col:nth-child(4n), .gcol4.___1 .col:last-child, .gcol4 > .column:nth-child(4n), .gcol4 > .column:last-child, .gcol4 > .col:nth-child(4n), .gcol4 > .col:last-child, .gcolumn4.___2 .column:nth-child(4n), .gcolumn4.___2 .column:last-child, .gcolumn4.___1 .column:nth-child(4n), .gcolumn4.___1 .column:last-child, .gcolumn4.___1 .col:nth-child(4n), .gcolumn4.___1 .col:last-child, .gcolumn4 > .column:nth-child(4n), .gcolumn4 > .column:last-child, .gcolumn4 > .col:nth-child(4n), .gcolumn4 > .col:last-child {
+        margin-right: 0; }
+    ._col4._222 .column, ._col4._222 .col, ._col4._2__ .column, ._col4._2__ .col, ._col4._221 .column, ._col4._221 .col, ._col4._2_1 .column, ._col4._2_1 .col, ._column4._222 .column, ._column4._222 .col, ._column4._2__ .column, ._column4._2__ .col, ._column4._221 .column, ._column4._221 .col, ._column4._2_1 .column, ._column4._2_1 .col, .gcol4._222 .column, .gcol4._222 .col, .gcol4._2__ .column, .gcol4._2__ .col, .gcol4._221 .column, .gcol4._221 .col, .gcol4._2_1 .column, .gcol4._2_1 .col, .gcolumn4._222 .column, .gcolumn4._222 .col, .gcolumn4._2__ .column, .gcolumn4._2__ .col, .gcolumn4._221 .column, .gcolumn4._221 .col, .gcolumn4._2_1 .column, .gcolumn4._2_1 .col {
+      width: 48.5%; }
+      ._col4._222 .column:nth-child(4n+1), ._col4._222 .col:nth-child(4n+1), ._col4._2__ .column:nth-child(4n+1), ._col4._2__ .col:nth-child(4n+1), ._col4._221 .column:nth-child(4n+1), ._col4._221 .col:nth-child(4n+1), ._col4._2_1 .column:nth-child(4n+1), ._col4._2_1 .col:nth-child(4n+1), ._column4._222 .column:nth-child(4n+1), ._column4._222 .col:nth-child(4n+1), ._column4._2__ .column:nth-child(4n+1), ._column4._2__ .col:nth-child(4n+1), ._column4._221 .column:nth-child(4n+1), ._column4._221 .col:nth-child(4n+1), ._column4._2_1 .column:nth-child(4n+1), ._column4._2_1 .col:nth-child(4n+1), .gcol4._222 .column:nth-child(4n+1), .gcol4._222 .col:nth-child(4n+1), .gcol4._2__ .column:nth-child(4n+1), .gcol4._2__ .col:nth-child(4n+1), .gcol4._221 .column:nth-child(4n+1), .gcol4._221 .col:nth-child(4n+1), .gcol4._2_1 .column:nth-child(4n+1), .gcol4._2_1 .col:nth-child(4n+1), .gcolumn4._222 .column:nth-child(4n+1), .gcolumn4._222 .col:nth-child(4n+1), .gcolumn4._2__ .column:nth-child(4n+1), .gcolumn4._2__ .col:nth-child(4n+1), .gcolumn4._221 .column:nth-child(4n+1), .gcolumn4._221 .col:nth-child(4n+1), .gcolumn4._2_1 .column:nth-child(4n+1), .gcolumn4._2_1 .col:nth-child(4n+1) {
+        clear: none; }
+      ._col4._222 .column:nth-child(2n+1), ._col4._222 .col:nth-child(2n+1), ._col4._2__ .column:nth-child(2n+1), ._col4._2__ .col:nth-child(2n+1), ._col4._221 .column:nth-child(2n+1), ._col4._221 .col:nth-child(2n+1), ._col4._2_1 .column:nth-child(2n+1), ._col4._2_1 .col:nth-child(2n+1), ._column4._222 .column:nth-child(2n+1), ._column4._222 .col:nth-child(2n+1), ._column4._2__ .column:nth-child(2n+1), ._column4._2__ .col:nth-child(2n+1), ._column4._221 .column:nth-child(2n+1), ._column4._221 .col:nth-child(2n+1), ._column4._2_1 .column:nth-child(2n+1), ._column4._2_1 .col:nth-child(2n+1), .gcol4._222 .column:nth-child(2n+1), .gcol4._222 .col:nth-child(2n+1), .gcol4._2__ .column:nth-child(2n+1), .gcol4._2__ .col:nth-child(2n+1), .gcol4._221 .column:nth-child(2n+1), .gcol4._221 .col:nth-child(2n+1), .gcol4._2_1 .column:nth-child(2n+1), .gcol4._2_1 .col:nth-child(2n+1), .gcolumn4._222 .column:nth-child(2n+1), .gcolumn4._222 .col:nth-child(2n+1), .gcolumn4._2__ .column:nth-child(2n+1), .gcolumn4._2__ .col:nth-child(2n+1), .gcolumn4._221 .column:nth-child(2n+1), .gcolumn4._221 .col:nth-child(2n+1), .gcolumn4._2_1 .column:nth-child(2n+1), .gcolumn4._2_1 .col:nth-child(2n+1) {
+        clear: both; }
+      ._col4._222 .column:nth-child(2n), ._col4._222 .column:nth-child(4n), ._col4._222 .column:last-child, ._col4._222 .col:nth-child(2n), ._col4._222 .col:nth-child(4n), ._col4._222 .col:last-child, ._col4._2__ .column:nth-child(2n), ._col4._2__ .column:nth-child(4n), ._col4._2__ .column:last-child, ._col4._2__ .col:nth-child(2n), ._col4._2__ .col:nth-child(4n), ._col4._2__ .col:last-child, ._col4._221 .column:nth-child(2n), ._col4._221 .column:nth-child(4n), ._col4._221 .column:last-child, ._col4._221 .col:nth-child(2n), ._col4._221 .col:nth-child(4n), ._col4._221 .col:last-child, ._col4._2_1 .column:nth-child(2n), ._col4._2_1 .column:nth-child(4n), ._col4._2_1 .column:last-child, ._col4._2_1 .col:nth-child(2n), ._col4._2_1 .col:nth-child(4n), ._col4._2_1 .col:last-child, ._column4._222 .column:nth-child(2n), ._column4._222 .column:nth-child(4n), ._column4._222 .column:last-child, ._column4._222 .col:nth-child(2n), ._column4._222 .col:nth-child(4n), ._column4._222 .col:last-child, ._column4._2__ .column:nth-child(2n), ._column4._2__ .column:nth-child(4n), ._column4._2__ .column:last-child, ._column4._2__ .col:nth-child(2n), ._column4._2__ .col:nth-child(4n), ._column4._2__ .col:last-child, ._column4._221 .column:nth-child(2n), ._column4._221 .column:nth-child(4n), ._column4._221 .column:last-child, ._column4._221 .col:nth-child(2n), ._column4._221 .col:nth-child(4n), ._column4._221 .col:last-child, ._column4._2_1 .column:nth-child(2n), ._column4._2_1 .column:nth-child(4n), ._column4._2_1 .column:last-child, ._column4._2_1 .col:nth-child(2n), ._column4._2_1 .col:nth-child(4n), ._column4._2_1 .col:last-child, .gcol4._222 .column:nth-child(2n), .gcol4._222 .column:nth-child(4n), .gcol4._222 .column:last-child, .gcol4._222 .col:nth-child(2n), .gcol4._222 .col:nth-child(4n), .gcol4._222 .col:last-child, .gcol4._2__ .column:nth-child(2n), .gcol4._2__ .column:nth-child(4n), .gcol4._2__ .column:last-child, .gcol4._2__ .col:nth-child(2n), .gcol4._2__ .col:nth-child(4n), .gcol4._2__ .col:last-child, .gcol4._221 .column:nth-child(2n), .gcol4._221 .column:nth-child(4n), .gcol4._221 .column:last-child, .gcol4._221 .col:nth-child(2n), .gcol4._221 .col:nth-child(4n), .gcol4._221 .col:last-child, .gcol4._2_1 .column:nth-child(2n), .gcol4._2_1 .column:nth-child(4n), .gcol4._2_1 .column:last-child, .gcol4._2_1 .col:nth-child(2n), .gcol4._2_1 .col:nth-child(4n), .gcol4._2_1 .col:last-child, .gcolumn4._222 .column:nth-child(2n), .gcolumn4._222 .column:nth-child(4n), .gcolumn4._222 .column:last-child, .gcolumn4._222 .col:nth-child(2n), .gcolumn4._222 .col:nth-child(4n), .gcolumn4._222 .col:last-child, .gcolumn4._2__ .column:nth-child(2n), .gcolumn4._2__ .column:nth-child(4n), .gcolumn4._2__ .column:last-child, .gcolumn4._2__ .col:nth-child(2n), .gcolumn4._2__ .col:nth-child(4n), .gcolumn4._2__ .col:last-child, .gcolumn4._221 .column:nth-child(2n), .gcolumn4._221 .column:nth-child(4n), .gcolumn4._221 .column:last-child, .gcolumn4._221 .col:nth-child(2n), .gcolumn4._221 .col:nth-child(4n), .gcolumn4._221 .col:last-child, .gcolumn4._2_1 .column:nth-child(2n), .gcolumn4._2_1 .column:nth-child(4n), .gcolumn4._2_1 .column:last-child, .gcolumn4._2_1 .col:nth-child(2n), .gcolumn4._2_1 .col:nth-child(4n), .gcolumn4._2_1 .col:last-child {
+        margin-right: 0; }
+
+  /**
+   * @file: site/tablet
+   */
+  .post .content_wrap .position,
+  .position {
+    width: 600px; }
+
+  .column {
+    margin-bottom: 1em; } }
+@media screen and (min-width: 768px) {
+  /**
+   *  @file: gcol/_large_tablet.scss
+   */
+  ._col3.__21 .column, ._col3.__21 .col, ._col3._321 .column, ._col3._321 .col, ._column3.__21 .column, ._column3.__21 .col, ._column3._321 .column, ._column3._321 .col, .gcol3.__21 .column, .gcol3.__21 .col, .gcol3._321 .column, .gcol3._321 .col, .gcolumn3.__21 .column, .gcolumn3.__21 .col, .gcolumn3._321 .column, .gcolumn3._321 .col {
+    width: 31.33334%; }
+    ._col3.__21 .column:nth-child(3n), ._col3.__21 .col:nth-child(3n), ._col3._321 .column:nth-child(3n), ._col3._321 .col:nth-child(3n), ._column3.__21 .column:nth-child(3n), ._column3.__21 .col:nth-child(3n), ._column3._321 .column:nth-child(3n), ._column3._321 .col:nth-child(3n), .gcol3.__21 .column:nth-child(3n), .gcol3.__21 .col:nth-child(3n), .gcol3._321 .column:nth-child(3n), .gcol3._321 .col:nth-child(3n), .gcolumn3.__21 .column:nth-child(3n), .gcolumn3.__21 .col:nth-child(3n), .gcolumn3._321 .column:nth-child(3n), .gcolumn3._321 .col:nth-child(3n) {
+      margin-right: 0; }
+    ._col3.__21 .column:nth-child(3n+1), ._col3.__21 .col:nth-child(3n+1), ._col3._321 .column:nth-child(3n+1), ._col3._321 .col:nth-child(3n+1), ._column3.__21 .column:nth-child(3n+1), ._column3.__21 .col:nth-child(3n+1), ._column3._321 .column:nth-child(3n+1), ._column3._321 .col:nth-child(3n+1), .gcol3.__21 .column:nth-child(3n+1), .gcol3.__21 .col:nth-child(3n+1), .gcol3._321 .column:nth-child(3n+1), .gcol3._321 .col:nth-child(3n+1), .gcolumn3.__21 .column:nth-child(3n+1), .gcolumn3.__21 .col:nth-child(3n+1), .gcolumn3._321 .column:nth-child(3n+1), .gcolumn3._321 .col:nth-child(3n+1) {
+      clear: both; }
+    ._col3.__21 .column:nth-child(2n), ._col3.__21 .col:nth-child(2n), ._col3._321 .column:nth-child(2n), ._col3._321 .col:nth-child(2n), ._column3.__21 .column:nth-child(2n), ._column3.__21 .col:nth-child(2n), ._column3._321 .column:nth-child(2n), ._column3._321 .col:nth-child(2n), .gcol3.__21 .column:nth-child(2n), .gcol3.__21 .col:nth-child(2n), .gcol3._321 .column:nth-child(2n), .gcol3._321 .col:nth-child(2n), .gcolumn3.__21 .column:nth-child(2n), .gcolumn3.__21 .col:nth-child(2n), .gcolumn3._321 .column:nth-child(2n), .gcolumn3._321 .col:nth-child(2n) {
+      margin-right: 3%; }
+    ._col3.__21 .column:nth-child(2n+1), ._col3.__21 .col:nth-child(2n+1), ._col3._321 .column:nth-child(2n+1), ._col3._321 .col:nth-child(2n+1), ._column3.__21 .column:nth-child(2n+1), ._column3.__21 .col:nth-child(2n+1), ._column3._321 .column:nth-child(2n+1), ._column3._321 .col:nth-child(2n+1), .gcol3.__21 .column:nth-child(2n+1), .gcol3.__21 .col:nth-child(2n+1), .gcol3._321 .column:nth-child(2n+1), .gcol3._321 .col:nth-child(2n+1), .gcolumn3.__21 .column:nth-child(2n+1), .gcolumn3.__21 .col:nth-child(2n+1), .gcolumn3._321 .column:nth-child(2n+1), .gcolumn3._321 .col:nth-child(2n+1) {
+      clear: none; }
+
+  /**
+   *  @file: site/large_tablet.scss
+   */
+  .position {
+    width: 768px; } }
+@media screen and (min-width: 1000px) {
+  /**
+   *  @file: gcol/_desktop.scss
+   */
+  /**
+   *  4 Column
+   */
+  ._col4._222 .column, ._col4._222 .col, ._col4._2__ .column, ._col4._2__ .col, ._col4._221 .column, ._col4._221 .col, ._col4._2_1 .column, ._col4._2_1 .col, ._column4._222 .column, ._column4._222 .col, ._column4._2__ .column, ._column4._2__ .col, ._column4._221 .column, ._column4._221 .col, ._column4._2_1 .column, ._column4._2_1 .col, .gcol4._222 .column, .gcol4._222 .col, .gcol4._2__ .column, .gcol4._2__ .col, .gcol4._221 .column, .gcol4._221 .col, .gcol4._2_1 .column, .gcol4._2_1 .col, .gcolumn4._222 .column, .gcolumn4._222 .col, .gcolumn4._2__ .column, .gcolumn4._2__ .col, .gcolumn4._221 .column, .gcolumn4._221 .col, .gcolumn4._2_1 .column, .gcolumn4._2_1 .col {
+    width: 22.75%; }
+    ._col4._222 .column:nth-child(2n), ._col4._222 .col:nth-child(2n), ._col4._2__ .column:nth-child(2n), ._col4._2__ .col:nth-child(2n), ._col4._221 .column:nth-child(2n), ._col4._221 .col:nth-child(2n), ._col4._2_1 .column:nth-child(2n), ._col4._2_1 .col:nth-child(2n), ._column4._222 .column:nth-child(2n), ._column4._222 .col:nth-child(2n), ._column4._2__ .column:nth-child(2n), ._column4._2__ .col:nth-child(2n), ._column4._221 .column:nth-child(2n), ._column4._221 .col:nth-child(2n), ._column4._2_1 .column:nth-child(2n), ._column4._2_1 .col:nth-child(2n), .gcol4._222 .column:nth-child(2n), .gcol4._222 .col:nth-child(2n), .gcol4._2__ .column:nth-child(2n), .gcol4._2__ .col:nth-child(2n), .gcol4._221 .column:nth-child(2n), .gcol4._221 .col:nth-child(2n), .gcol4._2_1 .column:nth-child(2n), .gcol4._2_1 .col:nth-child(2n), .gcolumn4._222 .column:nth-child(2n), .gcolumn4._222 .col:nth-child(2n), .gcolumn4._2__ .column:nth-child(2n), .gcolumn4._2__ .col:nth-child(2n), .gcolumn4._221 .column:nth-child(2n), .gcolumn4._221 .col:nth-child(2n), .gcolumn4._2_1 .column:nth-child(2n), .gcolumn4._2_1 .col:nth-child(2n) {
+      margin-right: 3%; }
+    ._col4._222 .column:nth-child(2n+1), ._col4._222 .col:nth-child(2n+1), ._col4._2__ .column:nth-child(2n+1), ._col4._2__ .col:nth-child(2n+1), ._col4._221 .column:nth-child(2n+1), ._col4._221 .col:nth-child(2n+1), ._col4._2_1 .column:nth-child(2n+1), ._col4._2_1 .col:nth-child(2n+1), ._column4._222 .column:nth-child(2n+1), ._column4._222 .col:nth-child(2n+1), ._column4._2__ .column:nth-child(2n+1), ._column4._2__ .col:nth-child(2n+1), ._column4._221 .column:nth-child(2n+1), ._column4._221 .col:nth-child(2n+1), ._column4._2_1 .column:nth-child(2n+1), ._column4._2_1 .col:nth-child(2n+1), .gcol4._222 .column:nth-child(2n+1), .gcol4._222 .col:nth-child(2n+1), .gcol4._2__ .column:nth-child(2n+1), .gcol4._2__ .col:nth-child(2n+1), .gcol4._221 .column:nth-child(2n+1), .gcol4._221 .col:nth-child(2n+1), .gcol4._2_1 .column:nth-child(2n+1), .gcol4._2_1 .col:nth-child(2n+1), .gcolumn4._222 .column:nth-child(2n+1), .gcolumn4._222 .col:nth-child(2n+1), .gcolumn4._2__ .column:nth-child(2n+1), .gcolumn4._2__ .col:nth-child(2n+1), .gcolumn4._221 .column:nth-child(2n+1), .gcolumn4._221 .col:nth-child(2n+1), .gcolumn4._2_1 .column:nth-child(2n+1), .gcolumn4._2_1 .col:nth-child(2n+1) {
+      clear: none; }
+    ._col4._222 .column:nth-child(4n+1), ._col4._222 .col:nth-child(4n+1), ._col4._2__ .column:nth-child(4n+1), ._col4._2__ .col:nth-child(4n+1), ._col4._221 .column:nth-child(4n+1), ._col4._221 .col:nth-child(4n+1), ._col4._2_1 .column:nth-child(4n+1), ._col4._2_1 .col:nth-child(4n+1), ._column4._222 .column:nth-child(4n+1), ._column4._222 .col:nth-child(4n+1), ._column4._2__ .column:nth-child(4n+1), ._column4._2__ .col:nth-child(4n+1), ._column4._221 .column:nth-child(4n+1), ._column4._221 .col:nth-child(4n+1), ._column4._2_1 .column:nth-child(4n+1), ._column4._2_1 .col:nth-child(4n+1), .gcol4._222 .column:nth-child(4n+1), .gcol4._222 .col:nth-child(4n+1), .gcol4._2__ .column:nth-child(4n+1), .gcol4._2__ .col:nth-child(4n+1), .gcol4._221 .column:nth-child(4n+1), .gcol4._221 .col:nth-child(4n+1), .gcol4._2_1 .column:nth-child(4n+1), .gcol4._2_1 .col:nth-child(4n+1), .gcolumn4._222 .column:nth-child(4n+1), .gcolumn4._222 .col:nth-child(4n+1), .gcolumn4._2__ .column:nth-child(4n+1), .gcolumn4._2__ .col:nth-child(4n+1), .gcolumn4._221 .column:nth-child(4n+1), .gcolumn4._221 .col:nth-child(4n+1), .gcolumn4._2_1 .column:nth-child(4n+1), .gcolumn4._2_1 .col:nth-child(4n+1) {
+      clear: both; }
+    ._col4._222 .column:nth-child(4n), ._col4._222 .column:last-child, ._col4._222 .col:nth-child(4n), ._col4._222 .col:last-child, ._col4._2__ .column:nth-child(4n), ._col4._2__ .column:last-child, ._col4._2__ .col:nth-child(4n), ._col4._2__ .col:last-child, ._col4._221 .column:nth-child(4n), ._col4._221 .column:last-child, ._col4._221 .col:nth-child(4n), ._col4._221 .col:last-child, ._col4._2_1 .column:nth-child(4n), ._col4._2_1 .column:last-child, ._col4._2_1 .col:nth-child(4n), ._col4._2_1 .col:last-child, ._column4._222 .column:nth-child(4n), ._column4._222 .column:last-child, ._column4._222 .col:nth-child(4n), ._column4._222 .col:last-child, ._column4._2__ .column:nth-child(4n), ._column4._2__ .column:last-child, ._column4._2__ .col:nth-child(4n), ._column4._2__ .col:last-child, ._column4._221 .column:nth-child(4n), ._column4._221 .column:last-child, ._column4._221 .col:nth-child(4n), ._column4._221 .col:last-child, ._column4._2_1 .column:nth-child(4n), ._column4._2_1 .column:last-child, ._column4._2_1 .col:nth-child(4n), ._column4._2_1 .col:last-child, .gcol4._222 .column:nth-child(4n), .gcol4._222 .column:last-child, .gcol4._222 .col:nth-child(4n), .gcol4._222 .col:last-child, .gcol4._2__ .column:nth-child(4n), .gcol4._2__ .column:last-child, .gcol4._2__ .col:nth-child(4n), .gcol4._2__ .col:last-child, .gcol4._221 .column:nth-child(4n), .gcol4._221 .column:last-child, .gcol4._221 .col:nth-child(4n), .gcol4._221 .col:last-child, .gcol4._2_1 .column:nth-child(4n), .gcol4._2_1 .column:last-child, .gcol4._2_1 .col:nth-child(4n), .gcol4._2_1 .col:last-child, .gcolumn4._222 .column:nth-child(4n), .gcolumn4._222 .column:last-child, .gcolumn4._222 .col:nth-child(4n), .gcolumn4._222 .col:last-child, .gcolumn4._2__ .column:nth-child(4n), .gcolumn4._2__ .column:last-child, .gcolumn4._2__ .col:nth-child(4n), .gcolumn4._2__ .col:last-child, .gcolumn4._221 .column:nth-child(4n), .gcolumn4._221 .column:last-child, .gcolumn4._221 .col:nth-child(4n), .gcolumn4._221 .col:last-child, .gcolumn4._2_1 .column:nth-child(4n), .gcolumn4._2_1 .column:last-child, .gcolumn4._2_1 .col:nth-child(4n), .gcolumn4._2_1 .col:last-child {
+      margin-right: 0; }
+
+  /**
+   * @file: site/desktop
+   */
+  .position {
+    width: 1000px; } }

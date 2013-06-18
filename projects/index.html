@@ -1,0 +1,16 @@
+---
+layout: default
+title: Work
+---
+
+<h1>Work</h1>
+<div  class="_column4 ___2">
+  {% for post in site.posts %}
+    {% if post.type == 'portfolio' %}
+    <div class="column">
+      <img src="{{ post.thumb }}" /><br/>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>

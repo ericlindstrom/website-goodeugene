@@ -2,7 +2,7 @@
 layout: page
 title: 94x50 Lebron Event
 type: portfolio
-permalink: /94x50/lebron-event/
+permalink: /projects/94x50/lebron-event/
 thumb: /media/images/lebron-thumb.jpg
 ---
 

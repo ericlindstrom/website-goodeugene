@@ -2,7 +2,7 @@
 layout: page
 title: Pound Magazine Photo Illustration
 type: portfolio
-permalink: /pound-magazine/photo-illustrations/
+permalink: /projects/pound-magazine/photo-illustrations/
 thumb: /media/images/pound-thumb.jpg
 ---
 

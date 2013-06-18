@@ -2,7 +2,7 @@
 layout: page
 title: Kanga Care Textile Prints
 type: portfolio
-permalink: /kanga-care/textile-prints/
+permalink: /projects/kanga-care/textile-prints/
 thumb: /media/images/kangacare-thumb.jpg
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Zippo Packaging
 type: portfolio
-permalink: /zippo/packaging/
+permalink: /projects/zippo/packaging/
 thumb: /media/images/zippo-thumb.jpg
 ---
 

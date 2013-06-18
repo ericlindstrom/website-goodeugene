@@ -2,7 +2,7 @@
 layout: page
 title: Bounce Magazine Event Collateral
 type: portfolio
-permalink: /bounce-magazine/event-collateral/
+permalink: /projects/bounce-magazine/event-collateral/
 thumb: /media/images/toc-thumb.jpg
 ---
 

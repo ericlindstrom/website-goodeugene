@@ -1,0 +1,114 @@
+/**
+ *  @file: gcol/_base.scss
+ */
+
+/* Possible cases.
+
+=============
+2 COLUMN GRID
+=============
+_column2      [x]
+_column2 ___1 [x]
+_column2 _221 [x]
+_column2 _2_1 [x]
+_column2 ____ [x]
+_column2 _222 [x]
+_column2 _2__ [x]
+_column2 ___2 [x]
+
+===================
+3 COLUMN GRID: 3331
+===================
+_column3      [x]
+_column3 _331 [x]
+_column3 ___1 [x]
+_column3 ____ [x]
+_column3 _333 [x]
+_column3 _3__ [x]
+_column3 __21 [ ]
+_column3 __22 [ ]
+_column3 __2_ [ ]
+
+
+
+
+=============
+4 COLUMN GRID
+=============
+_column4      [x]
+_column4 ___1 [x]
+_column4 ____ [ ]
+_column4 _221 [x]
+_column4 _2_1 [x]
+_column4 _2__ [x]
+_column4 ___2 [ ]
+
+*/
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+@mixin _flpr($width:100%) {
+  float:left; position:relative;
+  width: $width;
+}
+
+._col2, ._column2, .gcol2, .gcolumn2, 
+._col3, ._column3, .gcol3, .gcolumn3, 
+._col4, ._column4, .gcol4, .gcolumn4,
+.gcol, ._col, ._column, .gcolumn {
+  &> .column, &> .col { 
+    @include _flpr(); 
+    margin-right:$gutter;
+  }
+}
+
+/**
+ *  column2 default: _221
+ */
+
+._col2, ._column2, .gcol2, .gcolumn2,
+._col4, ._column4, .gcol4, .gcolumn4, {
+  &._222, &._2__ {
+    .column, .col {
+      width:(100% - $gutter) *.5;
+      &:nth-child(2n) { margin-right:0; }
+      &:nth-child(2n+1) { clear:both; }
+    }
+  }
+}
+
+._column4,
+._col2, ._column2, .gcol2, .gcolumn2 {
+  &.___2,
+  &.____, &._222, &._2__ { 
+    .column, .col {
+      width:(100% - $gutter) *.5;
+      &:nth-child(2n) { margin-right:0; }
+      &:nth-child(2n+1) { clear:both; }
+    }
+  }
+}
+
+._col3, ._column3, .gcol3, .gcolumn3 {
+  &.____, &._333, &._3__ { 
+    .column, .col {
+      width:(100% - $gutter*2) *.3333334;
+      &:nth-child(3n) { margin-right:0; }
+      &:nth-child(3n+1) { clear:both; }
+    }
+  }
+}
+
+._col4, ._column4, .gcol4, .gcolumn4 {
+  &.____, &._444, &._4__ { 
+    .column, .col {
+      width:(100% - $gutter*3) *.25;
+      &:nth-child(4n) { margin-right:0; }
+      &:nth-child(4n+1) { clear:both; }
+    }
+  }
+}

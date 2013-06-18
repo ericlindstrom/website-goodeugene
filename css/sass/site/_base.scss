@@ -1,0 +1,18 @@
+/**
+ *  @file: site/base
+ */
+
+@mixin flpr($width:100%) {
+  float:left; position:relative; width:$width;
+}
+
+#content img {
+  width:100%;
+}
+
+.position { margin:0 auto; }
+
+.container { 
+  @include flpr();
+  padding:0 $space; 
+}

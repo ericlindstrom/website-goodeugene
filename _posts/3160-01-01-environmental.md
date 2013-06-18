@@ -2,7 +2,7 @@
 layout: page
 title: nsw255 Environmental
 type: portfolio
-permalink: /nsw255/environmental/
+permalink: /projects/nsw255/environmental/
 thumb: /media/images/nsw255-thumb.jpg
 ---
 

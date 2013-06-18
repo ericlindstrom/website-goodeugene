@@ -2,7 +2,7 @@
 layout: page
 title: Nike Spring Global Retail
 type: portfolio
-permalink: /nike/spring-global-retail/
+permalink: /projects/nike/spring-global-retail/
 thumb: /media/images/nikespringat-thumb.jpg
 ---
 

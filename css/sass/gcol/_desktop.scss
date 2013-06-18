@@ -1,0 +1,20 @@
+/**
+ *  @file: gcol/_desktop.scss
+ */
+
+
+/**
+ *  4 Column
+ */
+._col4, ._column4, .gcol4, .gcolumn4 {
+  &._222, &._2__,
+  &._221, &._2_1 {
+    .column, .col {
+      width:(100% - ($gutter*3)) *.25;
+      &:nth-child(2n) { margin-right:$gutter;  }
+      &:nth-child(2n+1) { clear:none; }
+      &:nth-child(4n+1) { clear:both; }
+      &:nth-child(4n), &:last-child { margin-right:0; }
+    }
+  }
+}

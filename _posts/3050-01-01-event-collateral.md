@@ -2,7 +2,7 @@
 layout: page
 title: Dime Magazine Event Collateral
 type: portfolio
-permalink: /dime-magazine/event-collateral/
+permalink: /projects/dime-magazine/event-collateral/
 thumb: /media/images/dime-thumb.jpg
 ---
 

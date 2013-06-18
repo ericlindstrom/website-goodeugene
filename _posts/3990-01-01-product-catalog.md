@@ -2,7 +2,7 @@
 layout: page
 title: Genetic Shoes Product Catalog
 type: portfolio
-permalink: /genetic-shoes/product-catalog/
+permalink: /projects/genetic-shoes/product-catalog/
 thumb: /media/images/geneticcatalog-thumb.jpg
 ---
 

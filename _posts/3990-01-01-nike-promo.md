@@ -2,7 +2,7 @@
 layout: page
 title: 94x50 Nike Promo
 type: portfolio
-permalink: /94x50/nike-promo/
+permalink: /projects/94x50/nike-promo/
 thumb: /media/images/nike-thumb.jpg
 ---
 
