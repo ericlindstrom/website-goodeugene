@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Dime Magazine Event Collateral
-type: portfolio
+type: projects
 permalink: /projects/dime-magazine/event-collateral/
 thumb: /media/images/dime-thumb.jpg
+description: With the House of Hoops/Chainlink Fundamentals grand opening, Dime Magazine needed some extra collateral pieces to polish off the event. These pieces included player standup banners, t-shirts, invitations, email blasts and logo banners.
 ---
 
 With the House of Hoops/Chainlink Fundamentals grand opening, Dime Magazine needed some extra collateral pieces to polish off the event. These pieces included player standup banners, t-shirts, invitations, email blasts and logo banners.

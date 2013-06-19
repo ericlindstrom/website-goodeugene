@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Kanga Care Textile Prints
-type: portfolio
+type: projects
 permalink: /projects/kanga-care/textile-prints/
 thumb: /media/images/kangacare-thumb.jpg
+description: None
 ---
 
 

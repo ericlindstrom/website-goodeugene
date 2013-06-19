@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Pound Magazine Photo Illustration
-type: portfolio
+type: projects
 permalink: /projects/pound-magazine/photo-illustrations/
 thumb: /media/images/pound-thumb.jpg
+description: Photo illustrations and layouts for various hip-hop artists interviews.
 ---
 
 Photo illustrations and layouts for various hip-hop artists interviews.

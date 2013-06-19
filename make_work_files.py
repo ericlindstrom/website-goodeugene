@@ -9,9 +9,10 @@ def build_front_matter(item):
     html = '''---
 layout: page
 title: %(client)s %(name)s
-type: portfolio
+type: projects
 permalink: /projects/%(client_slug)s/%(slug)s/
 thumb: /media/images/%(photo_name)s-thumb.jpg
+description: %(details)s
 ---
 ''' % item
     return html

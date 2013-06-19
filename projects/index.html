@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Work
+bodyclass: projects
 ---
 
 <div  class="_column4 ___1">
   {% for post in site.posts %}
-    {% if post.type == 'portfolio' %}
+    {% if post.type == 'projects' %}
       <p class="column">
         <a class="thumb_info" href="{{ post.url }}">
 	  <img class="thumb" src="{{ post.thumb }}" />

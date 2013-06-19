@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Nike Spring Global Retail
-type: portfolio
+type: projects
 permalink: /projects/nike/spring-global-retail/
 thumb: /media/images/nikespringat-thumb.jpg
+description: Working with the Nemo crew, helped work on look and feel and retail elements from concept to completion for the Spring 2011 Athletic Training Season. 
 ---
 
 Working with the Nemo crew, helped work on look and feel and retail elements from concept to completion for the Spring 2011 Athletic Training Season. 

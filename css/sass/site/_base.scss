@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform:uppercase;
   margin:0; padding:0;
 }
-
+h1 { line-height:.9em; }
 h2 { font-size:1.5em; padding-bottom:$space*.5; line-height:1em; }
 p { 
   margin:0; padding:0 0 $space; 
@@ -63,4 +63,9 @@ ul { margin: 0; padding: 0 0 0 $space; }
 
 .column { margin-bottom:$space; font-size:.8em; }
 
-article.post { margin:$space 0; border-bottom:$border; }
+article.post { 
+  margin:$space 0; border-bottom:$border; 
+  &:first-child { margin-top:0; }
+}
+
+#header { margin-bottom:$space; }

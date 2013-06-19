@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Jennifer Lane Packaging
-type: portfolio
+type: projects
 permalink: /projects/jennifer-lane/packaging/
 thumb: /media/images/jenlane-thumb.jpg
+description: Singer/piano player, wanted a classy yet raw feel to her new album and promo materials.
 ---
 
 Singer/piano player, wanted a classy yet raw feel to her new album and promo materials.

@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="//use.typekit.net/eza3byw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }}: {% endif %}Eugene Good</title>
     <meta name="viewport" content="width=device-width">
-
-    <script type="text/javascript" src="//use.typekit.net/eza3byw.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Eugene Good{% endif %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{% if page.permalink %}http://www.goodeugene.com{{ page.permalink }}{% else %}http://www.goodeugene.com{{ page.url }}{% endif %}" />
+    <meta property="og:image" content="{% if page.thumb %}http://www.goodeugene.com{{ page.thumb }}{% else %}http://www.goodeugene.com/media/images/commonwealth.jpg{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Eugene doesn't want the world, he just wants to wear hats.{% endif %}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{% if page.permalink %}http://www.goodeugene.com{{ page.permalink }}{% else %}http://www.goodeugene.com{{ page.url }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Eugene Good{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Eugene doesn't want the world, he just wants to wear hats.{% endif %}">
+    <meta name="twitter:image" content="{% if page.thumb %}http://www.goodeugene.com{{ page.thumb }}{% else %}http://www.goodeugene.com/media/images/commonwealth.jpg{% endif %}">
+    <meta name="twitter:site" content="@goodeugene">
+    <meta name="twitter:creator" content="@goodeugene">
+
   </head>
+
+
   <body class="{{ page.type }} {{ page.bodyclass }}">
     <div id="wrap">
     <section id="header">

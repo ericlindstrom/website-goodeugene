@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Snowboards Various Graphics
-type: portfolio
+type: projects
 permalink: /projects/snowboards/various-graphics/
 thumb: /media/images/snowboards-thumb.jpg
+description: Graphics for Palmer, Lamar, Flow and LTD snowboards.
 ---
 
 Graphics for Palmer, Lamar, Flow and LTD snowboards.

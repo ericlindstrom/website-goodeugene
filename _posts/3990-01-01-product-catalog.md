@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Genetic Shoes Product Catalog
-type: portfolio
+type: projects
 permalink: /projects/genetic-shoes/product-catalog/
 thumb: /media/images/geneticcatalog-thumb.jpg
+description: 
 ---
 
 

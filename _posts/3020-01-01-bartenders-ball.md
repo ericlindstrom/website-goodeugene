@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Jameson Bartender's Ball
-type: portfolio
+type: projects
 permalink: /projects/jameson/bartenders-ball/
 thumb: /media/images/jameson-thumb.jpg
+description: Site design and layout for Jameson Bartenders Ball 2009.
 ---
 
 Site design and layout for Jameson Bartenders Ball 2009.
