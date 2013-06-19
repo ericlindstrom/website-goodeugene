@@ -7,12 +7,16 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
+    <script type="text/javascript" src="//use.typekit.net/eza3byw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
   </head>
   <body class="{{ page.type }} {{ page.bodyclass }}">
-    <section>
+    <div id="wrap">
+    <section id="header">
       <div class="position">
         <div class="container">
           <header>
@@ -35,6 +39,7 @@
 	</div><!-- .container -->
       </div><!-- .position -->
     </section>
-    <footer></footer>
+    </div> <!-- /wrap -->
+    <footer id="footer"></footer>
   </body>
 </html>

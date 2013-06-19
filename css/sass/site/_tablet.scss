@@ -1,9 +1,19 @@
 /**
  * @file: site/tablet
  */
-
+h2 { font-size:2em; }
+p {
+  font-size:.9em; 
+  font-weight:200;
+  letter-spacing:.05em; 
+}
 
 .post .content_wrap .position,
 .position { width:600px; }
 
-.column { margin-bottom:$space; }
+
+#header { 
+  margin-bottom:$space*2;
+  h2 { text-align:left; width:auto; padding:.25em 0; }
+  nav { width:auto; float:right; padding:.12em .5em; }
+}

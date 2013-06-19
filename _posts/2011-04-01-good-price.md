@@ -11,4 +11,4 @@ OPENING RECEPTION<br/>
 OPEN SPACE GALLERY- Beacon, NY<br/>
 Saturday, APRIL 9th - 6:00pm - 10:00pm
 
-<a href="http://www.openspacebeacon.com" target="_blank">openspacebeacon.com</a>
+<p><a href="http://www.openspacebeacon.com" target="_blank">openspacebeacon.com</a></p>

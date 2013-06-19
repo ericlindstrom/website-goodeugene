@@ -2,12 +2,56 @@
  *  @file: site/base
  */
 
+$border: 1px solid #ccc;
+
 @mixin flpr($width:100%) {
   float:left; position:relative; width:$width;
 }
 
+body { 
+  font-family:'jubilat', Times, serif; 
+  font-weight:200;
+  font-size:1.5em;
+}
+
+#wrap { @include flpr(); overflow:hidden; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial; 
+  font-weight: 400;
+  text-transform:uppercase;
+  margin:0; padding:0;
+}
+
+h2 { font-size:1.5em; padding-bottom:$space*.5; line-height:1em; }
+p { 
+  margin:0; padding:0 0 $space; 
+  color:#202020;
+  font-size:.8em; 
+  font-weight:400;
+  letter-spacing:0; 
+}
+
+a { color:#000; text-decoration:none; }
+
 #content img {
   width:100%;
+}
+
+article,
+section { @include flpr(); }
+
+menu,
+ol,
+ul { margin: 0; padding: 0 0 0 $space; }
+
+#header { 
+  border-bottom:$border; 
+  h2 { @include flpr($width:100%); padding:$space*.5 0 0; text-align:center; }
+  nav { width:282px; margin:0 auto; }
+  nav ul { @include flpr($width:auto); padding:0;}
+  nav ul li { @include flpr($width:auto); }
+  nav ul li a { @include flpr($width:auto); padding:$space*.5; }
 }
 
 .position { margin:0 auto; }
@@ -16,3 +60,7 @@
   @include flpr();
   padding:0 $space; 
 }
+
+.column { margin-bottom:$space; font-size:.8em; }
+
+article.post { margin:$space 0; border-bottom:$border; }

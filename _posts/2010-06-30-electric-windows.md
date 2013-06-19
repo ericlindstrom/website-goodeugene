@@ -8,5 +8,5 @@ type: post
 
 I'm excited to be apart of this event coming up July 31st.
 
-<a href="http://www.electricwindowsbeacon.com" target="_blank">electricwindowsbeacon.com</a>
+<p><a href="http://www.electricwindowsbeacon.com" target="_blank">electricwindowsbeacon.com</a></p>
 
