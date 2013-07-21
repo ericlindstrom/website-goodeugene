@@ -136,7 +136,7 @@ _column4 ___2 [ ]
  *  @file: site/base
  */
 body {
-  font-family: 'jubilat', Times, serif;
+  font-family: 'ff-tisa-web-pro', Times, serif;
   font-weight: 200;
   font-size: 1.5em; }
 
@@ -167,7 +167,8 @@ p {
   color: #202020;
   font-size: .8em;
   font-weight: 400;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  line-height: 1.4em; }
 
 a {
   color: #000;
@@ -176,6 +177,7 @@ a {
 #content img {
   width: 100%; }
 
+.block,
 article,
 section {
   float: left;
@@ -197,7 +199,7 @@ ul {
     padding: 0.5em 0 0;
     text-align: center; }
   #header nav {
-    width: 282px;
+    width: 290px;
     margin: 0 auto; }
   #header nav ul {
     float: left;
@@ -235,6 +237,14 @@ article.post {
 
 #header {
   margin-bottom: 1em; }
+
+.border_bottom {
+  border-bottom: 1px solid #cccccc; }
+
+.info_block {
+  margin-top: -30px;
+  margin-bottom: 50px;
+  padding-bottom: 30px; }
 
 @media screen and (min-width: 600px) {
   /**
@@ -309,8 +319,7 @@ article.post {
 
   p {
     font-size: .9em;
-    font-weight: 200;
-    letter-spacing: .05em; }
+    letter-spacing: 0; }
 
   .post .content_wrap .position,
   .position {
