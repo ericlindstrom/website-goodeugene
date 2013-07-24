@@ -2,3 +2,15 @@
  * @file: site/desktop
  */
 .position { width:1000px; }
+
+.post {
+  .content_wrap {
+    .position { width:1000px; }
+    .posts { width:600px; float:left;}
+    .side_content { 
+      float:right; width:250px; 
+      h3 { padding-top:$space*.5; }
+    }
+    
+  }
+}

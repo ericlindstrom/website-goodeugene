@@ -12,7 +12,19 @@ p {
 
 
 #header { 
+  position:fixed;
+  background:#FFF;
+  z-index:100;
   margin-bottom:$space*2;
-  h2 { text-align:left; width:auto; padding:.25em 0; }
+  h2 { text-align:left; width:auto; padding:.4em 0 .25em; font-size:1.5em; }
   nav { width:auto; float:right; padding:.12em .5em; }
+}
+
+.content_wrap {
+  margin-top:$space*5;
+}
+
+.posts .post { 
+  h2 { padding-bottom:0; }
+  .date { font-size:.7em; color:#666; }
 }

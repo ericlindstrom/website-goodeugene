@@ -50,9 +50,9 @@ ul { margin: 0; padding: 0 0 0 $space; }
 #header { 
   border-bottom:$border; 
   h2 { @include flpr($width:100%); padding:$space*.5 0 0; text-align:center; }
-  nav { width:290px; margin:0 auto; }
+  nav { width:230px; margin:0 auto; }
   nav ul { @include flpr($width:auto); padding:0;}
-  nav ul li { @include flpr($width:auto); }
+  nav ul li { @include flpr($width:auto); font-size:.8em; }
   nav ul li a { @include flpr($width:auto); padding:$space*.5; }
 }
 
@@ -75,3 +75,14 @@ article.post {
 .border_bottom { border-bottom: $border; }
 
 .info_block { margin-top:-30px; margin-bottom:50px; padding-bottom:30px; }
+
+.post {
+  article.post:last-child { margin-bottom:0; }
+  .content_wrap .side_content { 
+    @include flpr(); 
+    h3 { padding-top: $space; }
+    ul { margin:0; padding:0; }
+    ul li { list-style-type:none; @include flpr(); border-bottom: $border; }
+    ul li { padding:$space*.15 0 $space*.25;}
+  }
+}

@@ -2,6 +2,7 @@
 layout: post
 title: Boxes of Death
 type: post
+tags: [art, nemo, portland]
 ---
 
 ![Boxes of Death](/media/images/07_12_2013_BOD.jpg)

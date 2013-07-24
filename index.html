@@ -14,4 +14,28 @@ bodyclass: blog post
       </article>
       {% endif %}
     {% endfor %}
+
+<!-- 
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+-->
   </div>
+  <aside class="side_content">
+    <h3 class="border_bottom">Tags</h3>
+    <ul>
+    {% for category in site.tags %}
+      <li><a href="/minutes/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a></li>
+    {% endfor%}
+    </ul>
+  </aside>

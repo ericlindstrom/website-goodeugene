@@ -199,7 +199,7 @@ ul {
     padding: 0.5em 0 0;
     text-align: center; }
   #header nav {
-    width: 290px;
+    width: 230px;
     margin: 0 auto; }
   #header nav ul {
     float: left;
@@ -209,7 +209,8 @@ ul {
   #header nav ul li {
     float: left;
     position: relative;
-    width: auto; }
+    width: auto;
+    font-size: .8em; }
   #header nav ul li a {
     float: left;
     position: relative;
@@ -245,6 +246,26 @@ article.post {
   margin-top: -30px;
   margin-bottom: 50px;
   padding-bottom: 30px; }
+
+.post article.post:last-child {
+  margin-bottom: 0; }
+.post .content_wrap .side_content {
+  float: left;
+  position: relative;
+  width: 100%; }
+  .post .content_wrap .side_content h3 {
+    padding-top: 1em; }
+  .post .content_wrap .side_content ul {
+    margin: 0;
+    padding: 0; }
+  .post .content_wrap .side_content ul li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #cccccc; }
+  .post .content_wrap .side_content ul li {
+    padding: 0.15em 0 0.25em; }
 
 @media screen and (min-width: 600px) {
   /**
@@ -326,15 +347,28 @@ article.post {
     width: 600px; }
 
   #header {
+    position: fixed;
+    background: #FFF;
+    z-index: 100;
     margin-bottom: 2em; }
     #header h2 {
       text-align: left;
       width: auto;
-      padding: .25em 0; }
+      padding: .4em 0 .25em;
+      font-size: 1.5em; }
     #header nav {
       width: auto;
       float: right;
-      padding: .12em .5em; } }
+      padding: .12em .5em; }
+
+  .content_wrap {
+    margin-top: 5em; }
+
+  .posts .post h2 {
+    padding-bottom: 0; }
+  .posts .post .date {
+    font-size: .7em;
+    color: #666; } }
 @media screen and (min-width: 768px) {
   /**
    *  @file: gcol/_large_tablet.scss
@@ -377,4 +411,15 @@ article.post {
    * @file: site/desktop
    */
   .position {
-    width: 1000px; } }
+    width: 1000px; }
+
+  .post .content_wrap .position {
+    width: 1000px; }
+  .post .content_wrap .posts {
+    width: 600px;
+    float: left; }
+  .post .content_wrap .side_content {
+    float: right;
+    width: 250px; }
+    .post .content_wrap .side_content h3 {
+      padding-top: 0.5em; } }
