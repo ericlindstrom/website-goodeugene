@@ -1,0 +1,223 @@
+/**
+ *  @file: pllrs/_base.scss
+ *  @author: ericlindstrom
+ */
+
+@if not $pllrs_gutter {
+  $pllrs_gutter: 4%;
+}
+
+.column {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+@mixin _flpr($width:100%) {
+  float:left; position:relative;
+  width: $width;
+}
+
+@mixin pllr($columns:2, $extra:null) {
+  width:(100% - $pllrs_gutter*($columns - 1)) * (1 / $columns) $extra;
+  margin-right:$pllrs_gutter $extra;
+  $i:1;
+  @while $i < $columns {
+    &:nth-of-type(#{$i}n) { margin-right:$pllrs_gutter $extra; }
+    &:nth-of-type(#{$i}n+1) { clear:none $extra;}
+    $i: $i + 1;
+  }
+  &:nth-of-type(#{$columns}n) { margin-right:0 $extra; }
+  &:nth-of-type(#{$columns}n+1) { clear:both $extra; }
+}
+
+.pllrs8,
+.pllrs7,
+.pllrs6, 
+.pllrs5, 
+.pllrs4, 
+.pllrs3,  
+.pllrs2,  
+.pllrs {
+  @include _flpr();
+
+  &> .column { 
+    @include _flpr(); 
+  }
+}
+
+/**
+ *  2 Column
+ */
+.pllrs2 {
+
+  &.____ {
+    &> .column { @include pllr(2); }
+  }
+}
+
+/**
+ * 3 Column
+ */
+.pllrs3 {
+
+  &.____ { 
+    &> .column { @include pllr(3); }
+  }
+
+  &._2__,
+  &.__2_,
+  &.___2 {
+    &> .column { @include pllr(2); }
+  }
+
+}
+
+/**
+ * 4 Column
+ */
+.pllrs4 {
+  &.____ { 
+    &> .column { @include pllr(4); }
+  }
+
+  &._3__,
+  &.__3_,
+  &.___3 {
+    &> .column { @include pllr(3); }
+  }
+
+  &._2__,
+  &.__2_,
+  &.___2,
+  &._32_,
+  &._3_2 {
+    &> .column { @include pllr(2); }
+
+  }
+
+}
+
+/**
+ * 5 Column
+ */
+.pllrs5 {
+  &.____ { 
+    &> .column { @include pllr(5); }
+  }
+
+  &._3__,
+  &.__3_,
+  &.___3 {
+    &> .column { @include pllr(3); }
+  }
+
+  &._32_,
+  &.__32,
+  &._2__,
+  &.__2_,
+  &.___2 {
+    &> .column { @include pllr(2); }
+  }
+}
+
+/**
+ * 6 Column
+ */
+.pllrs6 {
+  //&._666, &._6__
+  &.____ { 
+    &> .column { @include pllr(6); }
+  }
+
+  &._4__,
+  &.__4_,
+  &.___4 {
+    &> .column { @include pllr(4); }
+  }
+
+  &._3__,
+  &.__3_,
+  &.___3 {
+    &> .column { @include pllr(3); }
+  }
+
+  &._32_,
+  &._3_2,
+  &.__32,
+  &._42_,
+  &._4_2,
+  &.__42,
+  &._2__,
+  &.__2_,
+  &.___2 {
+    &> .column { @include pllr(2); }
+  }
+}
+
+
+/**
+ * 7 Column
+ */
+.pllrs7 {
+  //&._777, &._7__
+  &.____ { 
+    &> .column { @include pllr(7); }
+  }
+
+  &._4__,
+  &.__4_,
+  &.___4 {
+    &> .column { @include pllr(4); }
+  }
+
+  &._43_,
+  &.__43,
+  &._3__,
+  &.__3_,
+  &.___3 {
+    &> .column { @include pllr(3); }
+  }
+
+  &._32_,
+  &.__32,
+  &._2__,
+  &.__2_,
+  &.___2 {
+    &> .column { @include pllr(2); }
+  }
+}
+
+/**
+ * 8 Column
+ */
+.pllrs8 {
+  //&._888, &._8__
+  &.____ { 
+    &> .column { @include pllr(8); }
+  }
+
+  &._64_,
+  &._4__,
+  &.__4_,
+  &.___4 {
+    &> .column { @include pllr(4); }
+  }
+
+  &._4_3,
+  &._43_,
+  &._63_ {
+    &> .column { @include pllr(3); }
+  }
+
+  &._42_,
+  &._432,
+  &._4_2,
+  &._642,
+  &._632,
+  &._62_ {
+    &> .column { @include pllr(2); }
+  }
+
+}

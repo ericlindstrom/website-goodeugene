@@ -1,0 +1,180 @@
+/**
+ *  @file: pllrs/_large_tablet.scss
+ *  @author: ericlindstrom
+ */
+
+/**
+ * 2 .column
+ */
+.pllrs2 {
+
+  &.__1_ {
+    &>  .column {
+      @include pllr(2);
+    }
+  }
+}
+
+/**
+ * 3 .column
+ */
+.pllrs3 {
+
+  &.__21,
+  &.__2_,
+  &.__1_ {
+    &>  .column {
+      @include pllr(3);
+    }
+  }
+
+  &._21_ {
+    &>  .column {
+      @include pllr(2);
+    }
+  }
+}
+
+/**
+ * 4 .column
+ */
+.pllrs4 {
+
+  &.__1_ {
+    &>  .column {
+      @include pllr(4);
+    }
+  }
+
+  &.__2_,
+  &.__3_ {
+    &>  .column {
+      @include pllr(4);
+    }
+  }
+
+  &._31_,
+  &._32_,
+  &._321 {
+    &>  .column {
+      @include pllr(3);
+    }
+  }
+
+}
+
+/**
+ * 5 .column
+ */
+.pllrs5 {
+
+  &.__32,
+  &.__2_,
+  &.__3_,
+  &.__1_ {
+    &>  .column {
+      @include pllr(5);
+    }
+  }
+
+  &._32_ {
+    &>  .column {
+      @include pllr(3);
+    }
+  }
+
+}
+
+/**
+ * 6 .column
+ */
+.pllrs6 {
+
+  &.__31,
+  &.__32,
+  &.__42,
+  &.__4_,
+  &.__3_,
+  &.__2_,
+  &.__1_ {
+    &>  .column {
+      @include pllr(6);
+    }
+  }
+
+  &._4_2,
+  &._42_ {
+    &>  .column {
+      @include pllr(4);
+    }
+  }
+
+  &._31_,
+  &._32_ {
+    &>  .column {
+      @include pllr(3);
+    }
+  }
+}
+
+/**
+ * 7 .column
+ */
+.pllrs7 {
+
+  &.__1_ {
+    &>  .column {
+      @include pllr(7);
+    }
+  }
+
+  &.__32,
+  &.__43,
+  &.__4_,
+  &.__3_,
+  &.__2_ {
+    &>  .column {
+      @include pllr(7);
+    }
+  }
+
+  &._43_ {
+    &>  .column {
+      @include pllr(4);
+    }
+  }
+
+  &._32_ {
+    &>  .column {
+      @include pllr(3);
+    }
+  }
+
+}
+
+/**
+ * 8 .column
+ */
+.pllrs8 {
+
+  &.__4_,
+  &.__1_ {
+    &>  .column {
+      @include pllr(8);
+    }
+  }
+
+  &._64_,
+  &._642,
+  &._632,
+  &._63_,
+  &._62_ {
+    &> .column { @include pllr(6); }
+  }
+
+  &._42_,
+  &._43_,
+  &._432 {
+    &> .column { @include pllr(4); }
+  }
+}

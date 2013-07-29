@@ -8,6 +8,13 @@ $border: 1px solid #ccc;
   float:left; position:relative; width:$width;
 }
 
+@mixin transition($params) {
+  -webkit-transition:$params;
+  -moz-transition:$params;
+  -o-transition:$params;
+  transition:$params;
+}
+
 body { 
   font-family:'ff-tisa-web-pro', Times, serif; 
   font-weight:200;
@@ -16,14 +23,16 @@ body {
 
 #wrap { @include flpr(); overflow:hidden; }
 
+.h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 { 
   font-family: 'alternate-gothic-no-3-d', Helvetica, Arial; 
   font-weight: 400;
   text-transform:uppercase;
   margin:0; padding:0;
 }
-h1 { line-height:.9em; }
-h2 { font-size:1.5em; padding-bottom:$space*.5; line-height:1em; }
+
+h1, .h1 { line-height:.9em; }
+h2, .h2 { font-size:1.5em; padding-bottom:$space*.5; line-height:1em; }
 p { 
   margin:0; padding:0 0 $space; 
   color:#202020;
@@ -84,5 +93,16 @@ article.post {
     ul { margin:0; padding:0; }
     ul li { list-style-type:none; @include flpr(); border-bottom: $border; }
     ul li { padding:$space*.15 0 $space*.25;}
+  }
+}
+
+.projects {
+  .column { padding:0; margin-bottom:20px; }
+  .thumb_info {
+    @include flpr();
+    .thumb, .info { @include flpr(); }
+    .info { 
+    }
+
   }
 }
