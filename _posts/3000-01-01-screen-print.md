@@ -2,7 +2,7 @@
 layout: page
 title: Screen Print 
 type: projects
-permalink: /projects/screen-print/None/
+permalink: /projects/screen-print/
 thumb: /media/images/screen-thumb.jpg
 description: None
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Portraits 
 type: projects
-permalink: /projects/portraits/None/
+permalink: /projects/portraits/
 thumb: /media/images/portrait-thumb.jpg
 description: None
 ---

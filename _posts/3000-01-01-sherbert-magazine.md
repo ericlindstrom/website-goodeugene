@@ -2,7 +2,7 @@
 layout: page
 title: Sherbert Mag 
 type: projects
-permalink: /projects/sherbert-magazine/None/
+permalink: /projects/sherbert-magazine/
 thumb: /media/images/sherbert-thumb.jpg
 description: None
 ---

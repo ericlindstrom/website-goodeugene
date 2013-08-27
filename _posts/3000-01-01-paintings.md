@@ -2,7 +2,7 @@
 layout: page
 title: Paintings 
 type: projects
-permalink: /projects/paintings/None/
+permalink: /projects/paintings/
 thumb: /media/images/everyday-thumb.jpg
 description: None
 ---

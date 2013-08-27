@@ -2,7 +2,7 @@
 layout: page
 title: Live Paintings 
 type: projects
-permalink: /projects/live-paintings/None/
+permalink: /projects/live-paintings/
 thumb: /media/images/live-thumb.jpg
 description: None
 ---

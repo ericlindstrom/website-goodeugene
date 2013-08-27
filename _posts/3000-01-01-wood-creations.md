@@ -2,7 +2,7 @@
 layout: page
 title: Wood Creations 
 type: projects
-permalink: /projects/wood-creations/None/
+permalink: /projects/wood-creations/
 thumb: /media/images/wood-thumb.jpg
 description: None
 ---
