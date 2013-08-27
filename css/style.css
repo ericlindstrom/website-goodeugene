@@ -535,9 +535,15 @@ article.post {
   border-bottom: 1px solid #cccccc; }
 
 .info_block {
-  margin-top: -30px;
+  margin-top: 0;
   margin-bottom: 50px;
   padding-bottom: 30px; }
+  .info_block .close {
+    top: -10px;
+    right: 30px;
+    position: absolute;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5); }
 
 .post article.post:last-child {
   margin-bottom: 0; }
@@ -1153,6 +1159,9 @@ article.post {
   .post .content_wrap .position,
   .position {
     width: 600px; }
+
+  .info_block {
+    margin-top: -30px; }
 
   #header {
     position: fixed;

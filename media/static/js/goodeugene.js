@@ -15,7 +15,12 @@ $(function() {
   $('#header a[href="/info/"]').on('click', function(e) {
     e.preventDefault();
     var info = $('meta[name="info"]').attr('content').replace(/\|/gi, '<br/>');
-    $('.content_wrap').prepend(['<div class="info_block block border_bottom"><div class="position"><div class="container">', info, '</div></div></div>'].join(''));
+    $('.content_wrap').prepend(['<div class="info_block block border_bottom"><div class="position"><div class="container">', info, '<a class="close" href="#"> × </a></div></div></div>'].join(''));
+
+    $('.info_block .close').on('click', function(e) {
+      e.preventDefault();
+      $('.info_block').remove();
+    });
 
     if ($('body').hasClass('info_open')) {
       $('.info_block').remove();
