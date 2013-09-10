@@ -535,12 +535,12 @@ article.post {
   border-bottom: 1px solid #cccccc; }
 
 .info_block {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 50px;
   padding-bottom: 30px; }
   .info_block .close {
-    top: -10px;
-    right: 30px;
+    top: -60px;
+    right: 20px;
     position: absolute;
     font-size: 2em;
     color: rgba(0, 0, 0, 0.5); }
@@ -567,7 +567,7 @@ article.post {
 
 .projects .column {
   padding: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 1%; }
 .projects .thumb_info {
   float: left;
   position: relative;
@@ -576,6 +576,36 @@ article.post {
     float: left;
     position: relative;
     width: 100%; }
+  .projects .thumb_info .info {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    padding: .75em;
+    opacity: 0;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
+  .projects .thumb_info:hover .info {
+    display: block;
+    opacity: 1; }
+
+.touch .projects .column {
+  margin-bottom: 20px; }
+  .touch .projects .column .thumb_info .info {
+    float: left;
+    position: relative;
+    width: 100%;
+    background: none;
+    color: #202020;
+    padding-left: 0;
+    display: block;
+    opacity: 1; }
 
 @media screen and (min-width: 600px) {
   /**
@@ -1162,6 +1192,9 @@ article.post {
 
   .info_block {
     margin-top: -30px; }
+    .info_block .close {
+      top: -30px;
+      right: 40px; }
 
   #header {
     position: fixed;
@@ -1802,22 +1835,4 @@ article.post {
       padding-top: 0.5em; }
 
   .projects .column {
-    margin-bottom: 1%; }
-  .projects .thumb_info .info {
-    background: rgba(0, 0, 0, 0.8);
-    color: #FFF;
-    float: left;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0;
-    padding: .75em;
-    opacity: 0;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
-    transition: all 0.1s linear; }
-  .projects .thumb_info:hover .info {
-    display: block;
-    opacity: 1; } }
+    margin-bottom: 1%; } }
