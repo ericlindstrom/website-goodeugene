@@ -445,6 +445,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
+.serif {
+  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 h1, .h1 {
   line-height: .9em; }
 
@@ -590,9 +595,22 @@ article.post {
     -webkit-transition: all 0.1s linear;
     -moz-transition: all 0.1s linear;
     -o-transition: all 0.1s linear;
-    transition: all 0.1s linear; }
+    transition: all 0.1s linear;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    /* OLD… */
+    -ms-flex-align: center;
+    /* You know the drill now… */
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 1.2em;
+    line-height: .9em; }
   .projects .thumb_info:hover .info {
-    display: block;
     opacity: 1; }
 
 .touch .projects .column {
