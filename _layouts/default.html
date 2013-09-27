@@ -5,9 +5,10 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% if site.readiness == 'DEV' %}<meta name="robots" content="noindex, nofollow">{% endif %}
+    {% if site.readiness == 'PRODUCTION' %}<meta name="robots" content="index, follow">{% endif %}
     <title>{% if page.title %}{{ page.title }}: {% endif %}Eugene Good</title>
-    <meta name="viewport" content="width=device-width">
     <meta name="info" content="Shipwrecked in Portland, OR|Building brands small to tall|Using tools of wood, graphite, paint & pixels|Working solo or with a crew|Saving lives one fire at a time|With a crazy creative messy mind|It's all Good">
 
     <link rel="stylesheet" href="/css/normalize.css">
