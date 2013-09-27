@@ -566,9 +566,9 @@ article.post {
     float: left;
     position: relative;
     width: 100%;
-    border-bottom: 1px solid #cccccc; }
-  .post .content_wrap .side_content ul li {
-    padding: 0.15em 0 0.25em; }
+    border-bottom: 1px solid #cccccc;
+    padding: 0.15em 0 0.25em;
+    text-transform: capitalize; }
 
 .projects .column {
   padding: 0;

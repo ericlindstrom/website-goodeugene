@@ -2,7 +2,7 @@
     <h3 class="border_bottom">Tags</h3>
     <ul>
     {% for category in site.tags %}
-      <li><a href="/minutes/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a></li>
+      <li><a href="/minutes/category/{{ category[0] | replace: ' ', '-' }}/">{{ category[0] }}</a></li>
     {% endfor%}
     </ul>
   </aside>

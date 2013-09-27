@@ -2,6 +2,7 @@
 layout: post
 title: Commonwealth
 type: post
+tags: [art, portland]
 ---
 
 ![Commonwealth](/media/images/commonwealth.jpg)

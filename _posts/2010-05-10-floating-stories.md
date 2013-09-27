@@ -3,6 +3,7 @@ layout: post
 title: Floating Stories
 type: post
 bodyclass: floating-stories
+tags: [gallery, art]
 ---
 
 ![Floating Stories](/media/images/floating_stories.jpg)

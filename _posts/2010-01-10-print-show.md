@@ -3,6 +3,7 @@ layout: post
 title: Print Show
 type: post
 bodyclass: print-show
+tags: [art, gallery, new york]
 ---
 
 ### OPEN SPACE presents - Limited Run 3

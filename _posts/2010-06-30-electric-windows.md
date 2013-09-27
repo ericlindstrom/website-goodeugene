@@ -2,6 +2,7 @@
 layout: post
 title: Electric Windows
 type: post
+tags: [art, gallery, new york]
 ---
 
 ![Electic Windows](/media/images/ew_web.jpg)

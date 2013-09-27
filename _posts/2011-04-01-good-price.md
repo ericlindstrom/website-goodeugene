@@ -2,6 +2,7 @@
 layout: post
 title: Good / Price - Opening Saturday April 9th!
 type: post
+tags: [art, gallery, new york]
 ---
 
 ![Good/Price](/media/images/goodprice.jpg)

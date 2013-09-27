@@ -104,8 +104,13 @@ article.post {
     @include flpr(); 
     h3 { padding-top: $space; }
     ul { margin:0; padding:0; }
-    ul li { list-style-type:none; @include flpr(); border-bottom: $border; }
-    ul li { padding:$space*.15 0 $space*.25;}
+    ul li { 
+      list-style-type:none; 
+      @include flpr(); 
+      border-bottom: $border; 
+      padding:$space*.15 0 $space*.25;
+      text-transform: capitalize;
+    }
   }
 }
 
