@@ -27,7 +27,7 @@ $(function() {
       $('body').removeClass('info_open');
     } else {
       $('body').addClass('info_open');
-      window.scrollTo(0);
+      window.scrollTo(0,0);
     }
   });
 
