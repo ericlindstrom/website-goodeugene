@@ -1,12 +1,11 @@
 ---
 layout: page
-title: MasterCraft Posters
+title: Poster Illustration
 type: projects
-permalink: /projects/mastercraft/posters/
+permalink: /projects/mastercraft/poster/
 thumb: /media/images/MasterCraft_Poster-thumb.jpg
 ---
 
 ![](/media/images/MasterCraft_Poster_1.jpg)
 ![](/media/images/MasterCraft_Poster_2.jpg)
-![](/media/images/MasterCraft_Poster_3.jpg)
-![](/media/images/MasterCraft_Poster_4.jpg)
+
