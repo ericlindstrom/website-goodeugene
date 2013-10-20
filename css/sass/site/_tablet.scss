@@ -21,11 +21,11 @@ p {
 
 #header { 
   position:fixed;
-  background:#FFF;
   z-index:100;
   margin-bottom:$space*2;
   h2 { text-align:left; width:auto; padding:.4em 0 .25em; font-size:1.5em; }
   nav { width:auto; float:right; padding:.12em .5em; }
+  a { color:#FFF; }
 }
 
 .content_wrap {

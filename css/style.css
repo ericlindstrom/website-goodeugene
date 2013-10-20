@@ -488,7 +488,13 @@ ul {
   padding: 0 0 0 1em; }
 
 #header {
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+  background: #2e2e2e;
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  #header a {
+    color: #FFF; }
   #header h2 {
     float: left;
     position: relative;
@@ -507,7 +513,9 @@ ul {
     float: left;
     position: relative;
     width: auto;
-    font-size: .8em; }
+    font-size: .8em;
+    letter-spacing: 2px;
+    padding: 6px 0; }
   #header nav ul li a {
     float: left;
     position: relative;
@@ -1216,7 +1224,6 @@ article.post {
 
   #header {
     position: fixed;
-    background: #FFF;
     z-index: 100;
     margin-bottom: 2em; }
     #header h2 {
@@ -1228,6 +1235,8 @@ article.post {
       width: auto;
       float: right;
       padding: .12em .5em; }
+    #header a {
+      color: #FFF; }
 
   .content_wrap {
     margin-top: 5em; }
