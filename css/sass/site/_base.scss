@@ -72,7 +72,7 @@ ul { margin: 0; padding: 0 0 0 $space; }
   letter-spacing:1px;
   a { color:#FFF; }
   h2 { @include flpr($width:100%); padding:$space*.5 0 0; text-align:center; }
-  nav { width:230px; margin:0 auto; }
+  nav { width:240px; margin:0 auto; }
   nav ul { @include flpr($width:auto); padding:0;}
   nav ul li { @include flpr($width:auto); font-size:.8em; letter-spacing:2px; padding:6px 0; }
   nav ul li a { @include flpr($width:auto); padding:$space*.5; }
