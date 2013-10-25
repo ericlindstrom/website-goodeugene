@@ -495,7 +495,7 @@ ul {
   padding: 0 0 0 1em; }
 
 #header {
-  background: #2e2e2e;
+  background: #222;
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
   text-transform: uppercase;
   letter-spacing: 1px; }
@@ -505,7 +505,7 @@ ul {
     float: left;
     position: relative;
     width: 100%;
-    padding: 0.5em 0 0;
+    padding: 0;
     text-align: center; }
   #header nav {
     width: 240px;
@@ -1278,14 +1278,16 @@ article.post {
     #header h2 {
       text-align: left;
       width: auto;
-      padding: .4em 0 .25em;
+      padding: 0 0 .1em;
       font-size: 1.5em; }
     #header nav {
       width: auto;
       float: right;
-      padding: .12em .5em; }
+      padding: .25em 0 .25em .5em; }
     #header a {
       color: #FFF; }
+    #header nav ul li:last-child a {
+      padding-right: 0; }
 
   .content_wrap {
     margin-top: 5em; }
