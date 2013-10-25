@@ -84,6 +84,9 @@ ul { margin: 0; padding: 0 0 0 $space; }
   nav ul li a { @include flpr($width:auto); padding:$space*.5; }
 }
 
+.projects #header nav ul .nav_projects a,
+.blog #header nav ul .nav_minutes a { color:#999; }
+
 .position { margin:0 auto; }
 
 .container { 

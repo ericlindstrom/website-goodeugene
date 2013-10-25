@@ -528,6 +528,10 @@ ul {
     width: auto;
     padding: 0.5em; }
 
+.projects #header nav ul .nav_projects a,
+.blog #header nav ul .nav_minutes a {
+  color: #999; }
+
 .position {
   margin: 0 auto; }
 
