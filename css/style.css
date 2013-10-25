@@ -634,6 +634,17 @@ article.post {
   .projects .thumb_info:hover .info {
     opacity: 1; }
 
+#footer {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-top: 2em;
+  background: #f0f0f0; }
+  #footer p {
+    padding-top: .7em;
+    color: #ccc;
+    font-size: .7em; }
+
 .touch .projects .column {
   margin-bottom: 20px; }
   .touch .projects .column .thumb_info .info {

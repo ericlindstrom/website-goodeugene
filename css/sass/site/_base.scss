@@ -170,6 +170,13 @@ article.post {
   }
 }
 
+#footer {
+  @include flpr();
+  margin-top:2em;
+  background:#f0f0f0;
+  p { padding-top:.7em; color:#ccc; font-size:.7em;}
+}
+
 .touch .projects .column {
   margin-bottom:20px;
   .thumb_info .info {
