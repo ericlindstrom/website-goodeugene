@@ -50,6 +50,13 @@ p {
   line-height:1.4em;
 }
 
+.projects #page p:last-of-type,
+.date { 
+  font-family:$sans; 
+  font-size:.7em; color:#666; 
+  letter-spacing:1px;
+}
+
 a { color:#000; text-decoration:none; }
 
 #content img {
@@ -65,7 +72,6 @@ ol,
 ul { margin: 0; padding: 0 0 0 $space; }
 
 #header { 
-  border-bottom:$border; 
   background:#2e2e2e;
   font-family: $sans;
   text-transform:uppercase;
@@ -122,6 +128,7 @@ article.post {
 }
 
 .projects {
+  h1 { padding-bottom:$space*.25; }
   .column { padding:0; margin-bottom:1%; }
   .thumb_info {
     @include flpr();
@@ -133,6 +140,7 @@ article.post {
       float:left; position:absolute;
       width:100%;
       height:100%;
+      letter-spacing:1px;
       top:0%;
       left:0;
       padding:.75em;
@@ -168,4 +176,29 @@ article.post {
     padding-left:0;
     display:block; opacity:1;
   }
+}
+
+.page_controls {
+  @include flpr();
+  font-family:$sans;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  .prev, .next { 
+    float:right;
+    padding:$space*.25 $space*.5;
+    &:hover {
+      background:#2e2e2e; 
+      color:#FFF;
+      &:before {
+        content: attr(data-title); 
+        margin-right:10px;
+      }
+    }
+  }
+  .prev { 
+    float:left; 
+    &:hover:before { content: ''; margin-right:0; }
+    &:hover:after { content: attr(data-title); margin-left:10px; }
+  }
+
 }

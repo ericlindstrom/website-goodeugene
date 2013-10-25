@@ -467,6 +467,13 @@ p {
   letter-spacing: 0;
   line-height: 1.4em; }
 
+.projects #page p:last-of-type,
+.date {
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  font-size: .7em;
+  color: #666;
+  letter-spacing: 1px; }
+
 a {
   color: #000;
   text-decoration: none; }
@@ -488,7 +495,6 @@ ul {
   padding: 0 0 0 1em; }
 
 #header {
-  border-bottom: 1px solid #cccccc;
   background: #2e2e2e;
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
   text-transform: uppercase;
@@ -578,6 +584,8 @@ article.post {
     padding: 0.15em 0 0.25em;
     text-transform: capitalize; }
 
+.projects h1 {
+  padding-bottom: 0.25em; }
 .projects .column {
   padding: 0;
   margin-bottom: 1%; }
@@ -596,6 +604,7 @@ article.post {
     position: absolute;
     width: 100%;
     height: 100%;
+    letter-spacing: 1px;
     top: 0%;
     left: 0;
     padding: .75em;
@@ -632,6 +641,31 @@ article.post {
     padding-left: 0;
     display: block;
     opacity: 1; }
+
+.page_controls {
+  float: left;
+  position: relative;
+  width: 100%;
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  .page_controls .prev, .page_controls .next {
+    float: right;
+    padding: 0.25em 0.5em; }
+    .page_controls .prev:hover, .page_controls .next:hover {
+      background: #2e2e2e;
+      color: #FFF; }
+      .page_controls .prev:hover:before, .page_controls .next:hover:before {
+        content: attr(data-title);
+        margin-right: 10px; }
+  .page_controls .prev {
+    float: left; }
+    .page_controls .prev:hover:before {
+      content: '';
+      margin-right: 0; }
+    .page_controls .prev:hover:after {
+      content: attr(data-title);
+      margin-left: 10px; }
 
 @media screen and (min-width: 600px) {
   /**
@@ -1242,10 +1276,7 @@ article.post {
     margin-top: 5em; }
 
   .posts .post h2 {
-    padding-bottom: 0; }
-  .posts .post .date {
-    font-size: .7em;
-    color: #666; } }
+    padding-bottom: 0; } }
 @media screen and (min-width: 768px) {
   /**
    *  @file: pllrs/_large_tablet.scss
@@ -1862,4 +1893,10 @@ article.post {
       padding-top: 0.5em; }
 
   .projects .column {
-    margin-bottom: 1%; } }
+    margin-bottom: 1%; }
+
+  .page_controls {
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    width: 96%; } }
