@@ -9,6 +9,6 @@ thumb: /media/images/MasterCraft_Poster-thumb.jpg
 ![](/media/images/MasterCraft_Poster_1.jpg)
 ![](/media/images/MasterCraft_Poster_2.jpg)
 
-Nemo Design:
-Client: Mastercraft
+NEMO DESIGN<br/>
+Client: Mastercraft<br/>
 Art Director: Jay Floyd
