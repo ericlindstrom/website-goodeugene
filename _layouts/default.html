@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
+    <script data-main="/media/static/js/goodeugene" src="/media/static/js/vendor/require.js"></script>
+
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Eugene Good{% endif %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{% if page.permalink %}http://www.goodeugene.com{{ page.permalink }}{% else %}http://www.goodeugene.com{{ page.url }}{% endif %}" />
@@ -37,12 +39,12 @@
       <div class="position">
         <div class="container">
           <header>
-            <h2><a href="/">{{ site.name }}</a></h2>
+            <h2><a href="/" title="{{ site.name }}"><img alt="mr.good" src="/media/images/goodeugene.svg"/></a></h2>
             <nav>
               <ul>
-                <li><a href="/projects/">Projects</a></li>
-		<li><a href="/minutes/">Minutes</a></li>
-                <li><a href="/info/">Info</a></li>
+		<li class="nav_minutes"><a href="/minutes/">Minutes</a></li>
+                <li class="nav_projects"><a href="/projects/">Projects</a></li>
+                <li class="nav_info"><a href="/info/">Info</a></li>
               </ul>
             </nav>
           </header>
@@ -57,10 +59,22 @@
       </div><!-- .position -->
     </section>
     </div> <!-- /wrap -->
-    <footer id="footer"></footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-    <script src="/media/static/js/goodeugene.js"></script>
+    <footer id="footer">
+      <div class="position">
+        <div class="container">
+          <p class="copyright">Copyright 2013 Eugene Good. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try{
+    var pageTracker = _gat._getTracker("UA-5495496-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
   </body>
 </html>

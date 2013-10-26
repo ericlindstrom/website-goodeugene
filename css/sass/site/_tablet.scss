@@ -21,12 +21,18 @@ p {
 
 #header { 
   position:fixed;
-  background:#FFF;
   z-index:100;
   margin-bottom:$space*2;
-  h2 { text-align:left; width:auto; padding:.4em 0 .25em; font-size:1.5em; }
-  nav { width:auto; float:right; padding:.12em .5em; }
+  h2 { 
+    text-align:left; width:auto; padding:0 0 .1em; font-size:1.5em; 
+    margin-left:-30px;
+  }
+  nav { width:auto; float:right; padding:.25em 0 .25em .5em; }
+  a { color:#FFF; }
+
+  nav ul li:last-child a { padding-right:0; }
 }
+
 
 .content_wrap {
   margin-top:$space*5;
@@ -34,5 +40,4 @@ p {
 
 .posts .post { 
   h2 { padding-bottom:0; }
-  .date { font-size:.7em; color:#666; }
 }

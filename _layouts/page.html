@@ -6,3 +6,12 @@ layout: default
 <div id="page">
 {{ content }}
 </div>
+
+<div class="page_controls">
+{% if page.next.type != 'post' %}
+  {% if page.next %}<a class="prev" href="{{ page.next.url }}" data-title="{{ page.next.title }}">&larr;</a>{% endif %}
+{% endif %}
+{% if page.previous.type != 'post' %}
+  {% if page.previous %}<a class="next" href="{{ page.previous.url }}" data-title="{{ page.previous.title }}">&rarr;</a>{% endif %}
+{% endif %}
+</div>

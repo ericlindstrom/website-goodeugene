@@ -3,6 +3,8 @@
  */
 
 $border: 1px solid #ccc;
+$sans: 'alternate-gothic-no-3-d', Helvetica, Arial; 
+
 
 @mixin flpr($width:100%) {
   float:left; position:relative; width:$width;
@@ -38,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 { line-height:.9em; }
-h2, .h2 { font-size:1.5em; padding-bottom:$space*.5; line-height:1em; }
+h2, .h2 { font-size:1.5em; line-height:1em; }
 p { 
   margin:0; padding:0 0 $space; 
   color:#202020;
@@ -46,6 +48,13 @@ p {
   font-weight:400;
   letter-spacing:0; 
   line-height:1.4em;
+}
+
+.projects #page p:last-of-type,
+.date { 
+  font-family:$sans; 
+  font-size:.7em; color:#666; 
+  letter-spacing:1px;
 }
 
 a { color:#000; text-decoration:none; }
@@ -63,13 +72,24 @@ ol,
 ul { margin: 0; padding: 0 0 0 $space; }
 
 #header { 
-  border-bottom:$border; 
-  h2 { @include flpr($width:100%); padding:$space*.5 0 0; text-align:center; }
-  nav { width:230px; margin:0 auto; }
+  background:#222;
+  font-family: $sans;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  a { color:#FFF; }
+  h2 { 
+    @include flpr($width:100%); 
+    padding:0; text-align:center; 
+    margin-left:-15px;
+  }
+  nav { width:240px; margin:0 auto; }
   nav ul { @include flpr($width:auto); padding:0;}
-  nav ul li { @include flpr($width:auto); font-size:.8em; }
+  nav ul li { @include flpr($width:auto); font-size:.8em; letter-spacing:2px; padding:6px 0; }
   nav ul li a { @include flpr($width:auto); padding:$space*.5; }
 }
+
+.projects #header nav ul .nav_projects a,
+.blog #header nav ul .nav_minutes a { color:#999; }
 
 .position { margin:0 auto; }
 
@@ -115,6 +135,7 @@ article.post {
 }
 
 .projects {
+  h1 { padding-bottom:$space*.25; }
   .column { padding:0; margin-bottom:1%; }
   .thumb_info {
     @include flpr();
@@ -126,6 +147,7 @@ article.post {
       float:left; position:absolute;
       width:100%;
       height:100%;
+      letter-spacing:1px;
       top:0%;
       left:0;
       padding:.75em;
@@ -152,6 +174,13 @@ article.post {
   }
 }
 
+#footer {
+  @include flpr();
+  margin-top:2em;
+  background:#f0f0f0;
+  p { padding-top:.7em; color:#ccc; font-size:.7em;}
+}
+
 .touch .projects .column {
   margin-bottom:20px;
   .thumb_info .info {
@@ -161,4 +190,29 @@ article.post {
     padding-left:0;
     display:block; opacity:1;
   }
+}
+
+.page_controls {
+  @include flpr();
+  font-family:$sans;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  .prev, .next { 
+    float:right;
+    padding:$space*.25 $space*.5;
+    &:hover {
+      background:#2e2e2e; 
+      color:#FFF;
+      &:before {
+        content: attr(data-title); 
+        margin-right:10px;
+      }
+    }
+  }
+  .prev { 
+    float:left; 
+    &:hover:before { content: ''; margin-right:0; }
+    &:hover:after { content: attr(data-title); margin-left:10px; }
+  }
+
 }

@@ -455,7 +455,6 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 1.5em;
-  padding-bottom: 0.5em;
   line-height: 1em; }
 
 p {
@@ -466,6 +465,13 @@ p {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.4em; }
+
+.projects #page p:last-of-type,
+.date {
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  font-size: .7em;
+  color: #666;
+  letter-spacing: 1px; }
 
 a {
   color: #000;
@@ -488,15 +494,21 @@ ul {
   padding: 0 0 0 1em; }
 
 #header {
-  border-bottom: 1px solid #cccccc; }
+  background: #222;
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  #header a {
+    color: #FFF; }
   #header h2 {
     float: left;
     position: relative;
     width: 100%;
-    padding: 0.5em 0 0;
-    text-align: center; }
+    padding: 0;
+    text-align: center;
+    margin-left: -15px; }
   #header nav {
-    width: 230px;
+    width: 240px;
     margin: 0 auto; }
   #header nav ul {
     float: left;
@@ -507,12 +519,18 @@ ul {
     float: left;
     position: relative;
     width: auto;
-    font-size: .8em; }
+    font-size: .8em;
+    letter-spacing: 2px;
+    padding: 6px 0; }
   #header nav ul li a {
     float: left;
     position: relative;
     width: auto;
     padding: 0.5em; }
+
+.projects #header nav ul .nav_projects a,
+.blog #header nav ul .nav_minutes a {
+  color: #999; }
 
 .position {
   margin: 0 auto; }
@@ -570,6 +588,8 @@ article.post {
     padding: 0.15em 0 0.25em;
     text-transform: capitalize; }
 
+.projects h1 {
+  padding-bottom: 0.25em; }
 .projects .column {
   padding: 0;
   margin-bottom: 1%; }
@@ -588,6 +608,7 @@ article.post {
     position: absolute;
     width: 100%;
     height: 100%;
+    letter-spacing: 1px;
     top: 0%;
     left: 0;
     padding: .75em;
@@ -613,6 +634,17 @@ article.post {
   .projects .thumb_info:hover .info {
     opacity: 1; }
 
+#footer {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-top: 2em;
+  background: #f0f0f0; }
+  #footer p {
+    padding-top: .7em;
+    color: #ccc;
+    font-size: .7em; }
+
 .touch .projects .column {
   margin-bottom: 20px; }
   .touch .projects .column .thumb_info .info {
@@ -624,6 +656,31 @@ article.post {
     padding-left: 0;
     display: block;
     opacity: 1; }
+
+.page_controls {
+  float: left;
+  position: relative;
+  width: 100%;
+  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  .page_controls .prev, .page_controls .next {
+    float: right;
+    padding: 0.25em 0.5em; }
+    .page_controls .prev:hover, .page_controls .next:hover {
+      background: #2e2e2e;
+      color: #FFF; }
+      .page_controls .prev:hover:before, .page_controls .next:hover:before {
+        content: attr(data-title);
+        margin-right: 10px; }
+  .page_controls .prev {
+    float: left; }
+    .page_controls .prev:hover:before {
+      content: '';
+      margin-right: 0; }
+    .page_controls .prev:hover:after {
+      content: attr(data-title);
+      margin-left: 10px; }
 
 @media screen and (min-width: 600px) {
   /**
@@ -1216,27 +1273,28 @@ article.post {
 
   #header {
     position: fixed;
-    background: #FFF;
     z-index: 100;
     margin-bottom: 2em; }
     #header h2 {
       text-align: left;
       width: auto;
-      padding: .4em 0 .25em;
-      font-size: 1.5em; }
+      padding: 0 0 .1em;
+      font-size: 1.5em;
+      margin-left: -30px; }
     #header nav {
       width: auto;
       float: right;
-      padding: .12em .5em; }
+      padding: .25em 0 .25em .5em; }
+    #header a {
+      color: #FFF; }
+    #header nav ul li:last-child a {
+      padding-right: 0; }
 
   .content_wrap {
     margin-top: 5em; }
 
   .posts .post h2 {
-    padding-bottom: 0; }
-  .posts .post .date {
-    font-size: .7em;
-    color: #666; } }
+    padding-bottom: 0; } }
 @media screen and (min-width: 768px) {
   /**
    *  @file: pllrs/_large_tablet.scss
@@ -1853,4 +1911,10 @@ article.post {
       padding-top: 0.5em; }
 
   .projects .column {
-    margin-bottom: 1%; } }
+    margin-bottom: 1%; }
+
+  .page_controls {
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    width: 96%; } }
