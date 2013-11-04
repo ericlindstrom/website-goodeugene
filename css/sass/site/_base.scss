@@ -21,9 +21,10 @@ body {
   font-family:'ff-tisa-web-pro', Times, serif; 
   font-weight:200;
   font-size:1.5em;
+  background:#f0f0f0;
 }
 
-#wrap { @include flpr(); overflow:hidden; }
+#wrap { @include flpr(); overflow:hidden; background:#FFF; padding-bottom:1em; }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 { 
@@ -176,7 +177,6 @@ article.post {
 
 #footer {
   @include flpr();
-  margin-top:2em;
   background:#f0f0f0;
   p { padding-top:.7em; color:#ccc; font-size:.7em;}
 }

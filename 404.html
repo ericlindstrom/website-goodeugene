@@ -5,29 +5,31 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="robots" content="index, follow">
     <title>Home: Eugene Good</title>
-    <meta name="viewport" content="width=device-width">
     <meta name="info" content="Shipwrecked in Portland, OR|Building brands small to tall|Using tools of wood, graphite, paint & pixels|Working solo or with a crew|Saving lives one fire at a time|With a crazy creative messy mind|It's all Good">
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
+    <script data-main="/media/static/js/goodeugene" src="/media/static/js/vendor/require.js"></script>
+
     <meta property="og:title" content="Home" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.goodeugene.com/minutes/index.html" />
+    <meta property="og:url" content="http://www.goodeugene.com/index.html" />
     <meta property="og:image" content="http://www.goodeugene.com/media/images/commonwealth.jpg" />
     <meta property="og:description" content="Eugene doesn't want the world, he just wants to wear hats.">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="http://www.goodeugene.com/minutes/index.html">
+    <meta name="twitter:url" content="http://www.goodeugene.com/index.html">
     <meta name="twitter:title" content="Home">
     <meta name="twitter:description" content="Eugene doesn't want the world, he just wants to wear hats.">
     <meta name="twitter:image" content="http://www.goodeugene.com/media/images/commonwealth.jpg">
     <meta name="twitter:site" content="@goodeugene">
     <meta name="twitter:creator" content="@goodeugene">
-
+    <!-- modernizr / respond -->
   </head>
 
 
@@ -37,12 +39,12 @@
       <div class="position">
         <div class="container">
           <header>
-            <h2><a href="/">Good Eugene</a></h2>
+            <h2><a href="/" title="Good Eugene"><img alt="mr.good" src="/media/images/goodeugene.svg"/></a></h2>
             <nav>
               <ul>
-                <li><a href="/projects/">Projects</a></li>
-		<li><a href="/minutes/">Minutes</a></li>
-                <li><a href="/info/">Info</a></li>
+		<li class="nav_minutes"><a href="/minutes/">Minutes</a></li>
+                <li class="nav_projects"><a href="/projects/">Projects</a></li>
+                <li class="nav_info"><a href="/info/">Info</a></li>
               </ul>
             </nav>
           </header>
@@ -57,9 +59,23 @@
       </div><!-- .position -->
     </section>
     </div> <!-- /wrap -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="position">
+        <div class="container">
+          <p class="copyright">Copyright 2013 Eugene Good. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="/media/static/js/goodeugene.js"></script>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try{
+    var pageTracker = _gat._getTracker("UA-5495496-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
   </body>
 </html>

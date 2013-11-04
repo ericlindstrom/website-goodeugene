@@ -429,13 +429,16 @@
 body {
   font-family: 'ff-tisa-web-pro', Times, serif;
   font-weight: 200;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  background: #f0f0f0; }
 
 #wrap {
   float: left;
   position: relative;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #FFF;
+  padding-bottom: 1em; }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
@@ -638,7 +641,6 @@ article.post {
   float: left;
   position: relative;
   width: 100%;
-  margin-top: 2em;
   background: #f0f0f0; }
   #footer p {
     padding-top: .7em;
@@ -1294,7 +1296,10 @@ article.post {
     margin-top: 5em; }
 
   .posts .post h2 {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+
+  #wrap {
+    padding-bottom: 2.5em; } }
 @media screen and (min-width: 768px) {
   /**
    *  @file: pllrs/_large_tablet.scss
