@@ -48,7 +48,7 @@ p {
   font-size:.8em; 
   font-weight:400;
   letter-spacing:0; 
-  line-height:1.4em;
+  line-height:1.6em;
 }
 
 .projects #page p:last-of-type,
@@ -59,6 +59,8 @@ p {
 }
 
 a { color:#000; text-decoration:none; }
+p a { color:#999; border-bottom:1px dotted #999; }
+
 
 #content img {
   width:100%;
