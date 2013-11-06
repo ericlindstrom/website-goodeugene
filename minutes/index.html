@@ -1,19 +1,7 @@
----
-layout: default
-title: Home
-bodyclass: blog post
----
-
-  <div class="posts">
-    {% for post in site.posts %}
-      {% if post.type == 'post' %}
-      <article class="post">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="date">{{ post.date | date_to_string }}</p>
-	<div class="body">{{ post.content }}</div>
-      </article>
-      {% endif %}
-    {% endfor %}
-
-  </div>
-  {% include blog_aside.html %}
+--- layout: default title: Home bodyclass: blog post ---
+{% for post in site.posts %} {% if post.type == 'post' %}
+{{ post.title }}
+{{ post.date | date_to_string }}
+{{ post.content }}
+{% endif %} {% endfor %}
+{% include blog_aside.html %}
