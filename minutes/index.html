@@ -1,7 +1,1 @@
---- layout: default title: Home bodyclass: blog post ---
-{% for post in site.posts %} {% if post.type == 'post' %}
-{{ post.title }}
-{{ post.date | date_to_string }}
-{{ post.content }}
-{% endif %} {% endfor %}
-{% include blog_aside.html %}
+--- layout: default title: Home bodyclass: blog post --- {% for post in site.posts %} {% if post.type == 'post' %} {{ post.title }} {{ post.date | date_to_string }} {{ post.content }} {% endif %} {% endfor %} {% include blog_aside.html %}
