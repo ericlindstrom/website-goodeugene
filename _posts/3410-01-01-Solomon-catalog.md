@@ -12,7 +12,7 @@ thumb: /media/images/solomon_book-thumb.jpg
 ![](/media/images/solomon_book_4.jpg)
 
 
-Nemo Design
-Client: Solomon / Bonfire
-Art Director: Steve Hoskins
+NEMO DESIGN<br/>
+Client: Solomon / Bonfire<br/>
+Art Director: Steve Hoskins<br/>
 Lead Designer: Eugene Good
