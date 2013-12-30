@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Paintings/Creations
+title: Creations
 type: projects
-permalink: /projects/paintings/creations/
+permalink: /projects/creations/
 thumb: /media/images/Paintings-thumb.jpg
-description: 
+description: My second life—how I break away from the pressures of design and to tap into my true artistic self.
 ---
 
+My second life—how I break away from the pressures of design and to tap into my artistic self.
 
 ![](/media/images/Paintings1.jpg)
 ![](/media/images/Paintings2.jpg)

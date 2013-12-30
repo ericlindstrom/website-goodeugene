@@ -4,10 +4,12 @@ title: Photoshoot Direction
 type: projects
 permalink: /projects/photoshoot/direction/
 thumb: /media/images/Photoshoots-thumb.jpg
-description: Supporting seasonal campaigns by allowing the product to tell the story.  
+description: Crafting a shoot direction that allows the product to tell the story in support of various seasonal campaigns. An eye for detail is a must here.
+  
 ---
 
-Supporting seasonal campaigns by allowing the product to tell the story.
+Crafting a shoot direction that allows the product to tell the story in support of various seasonal campaigns. An eye for detail is a must here.
+
 
 
 ![](/media/images/Photoshoot1.jpg)

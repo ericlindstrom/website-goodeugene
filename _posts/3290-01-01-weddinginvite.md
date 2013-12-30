@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Wedding Invite
+title: Wedding Invitation
 type: projects
 permalink: /projects/wedding/invite/
 thumb: /media/images/WeddingInvite-thumb.jpg
-description: It seems it would be hard to see clearly through a magical journey like this, so illustrating a map felt right for the occasion. 
+description: Weddings are a magical journey—and it’s all to easy to lose your way. Hence, it felt like the right occasion for creating a map. 
 ---
 
-It seems it would be hard to see clearly through a magical journey like this, so creating a map felt right for the occasion.
+Weddings are a magical journey—and it’s all to easy to lose your way. Hence, it felt like the right occasion for creating a map.
 
 
 ![](/media/images/Wedding_Invite1.jpg)
