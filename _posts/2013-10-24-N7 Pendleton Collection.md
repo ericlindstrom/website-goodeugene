@@ -2,7 +2,7 @@
 layout: post
 title: N7 Pendleton Collection
 type: post
-tags: [nike, N7, nemo, portland]
+tags: [nemo, portland]
 ---
 
 ![Nike N7 Pendleton Collection](/media/images/b-n7pendleton.jpg)
