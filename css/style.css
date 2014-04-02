@@ -603,7 +603,8 @@ article.post {
 .projects .thumb_info {
   float: left;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  border: none; }
   .projects .thumb_info .thumb, .projects .thumb_info .info {
     float: left;
     position: relative;
@@ -1303,7 +1304,10 @@ article.post {
     padding-bottom: 0; }
 
   #wrap {
-    padding-bottom: 2.5em; } }
+    padding-bottom: 2.5em; }
+
+  #footer .email_link {
+    float: right; } }
 @media screen and (min-width: 768px) {
   /**
    *  @file: pllrs/_large_tablet.scss
