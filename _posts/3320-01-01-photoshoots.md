@@ -18,6 +18,10 @@ Crafting a shoot direction that allows the product to tell the story in support 
 ![](/media/images/Photoshoot4.jpg)
 ![](/media/images/Photoshoot5.jpg)
 ![](/media/images/Photoshoot6.jpg)
+![](/media/images/Photoshoot7.jpg)
+![](/media/images/Photoshoot8.jpg)
+![](/media/images/Photoshoot9.jpg)
+![](/media/images/Photoshoot10.jpg)
 
 
-Photography: Swanson Studios, Todd Eckelman, Golden
+Photography: Swanson Studios, Todd Eckelman, Golden Studio
