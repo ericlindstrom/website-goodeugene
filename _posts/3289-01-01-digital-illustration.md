@@ -4,10 +4,10 @@ title: Digital Illustration
 type: projects
 permalink: /projects/illustration/
 thumb: /media/images/digital_illustration-thumb.jpg
-description: Projects come and go but the fact still remains, it takes time to create them. This section represents a bucket collection of illustrations with various projects from game graphics, editorials to typography I've worked on over the years.
+description: Projects come and go but the fact still remains, it takes time to create them. This section represents a bucket collection of illustrations with various projects from game graphics, editorials to typography I’ve worked on over the years.
 ---
 
-Projects come and go but the fact still remains, it takes time to create them. This section represents a bucket collection of illustrations with various projects from game graphics, editorials to typography I've worked on over the years.
+Projects come and go but the fact still remains, it takes time to create them. This section represents a bucket collection of illustrations with various projects from game graphics, editorials to typography I’ve worked on over the years.
 
 
 ![](/media/images/digital_illustration_1.jpg)

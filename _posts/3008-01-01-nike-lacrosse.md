@@ -4,11 +4,10 @@ title: Nike Lacrosse Sales Kit
 type: projects
 permalink: /projects/nike/print/
 thumb: /media/images/nike_lacrosse-thumb.jpg
-description: Nike Lacrosse sales kit. 
+description: Here, we translated Nike’s “gear up” themed campaign into a sales kit for Nike Lacrosse. 
 ---
 
-Nike Lacrosse sales kit.
-
+Here, we translated Nike’s “gear up” themed campaign into a sales kit for Nike Lacrosse.
 
 ![](/media/images/nike_lacrosse_1.jpg)
 ![](/media/images/nike_lacrosse_2.jpg)

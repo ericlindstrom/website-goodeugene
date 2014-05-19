@@ -4,10 +4,10 @@ title: Nike Gear Up
 type: projects
 permalink: /projects/nike/gearup/direction/
 thumb: /media/images/nike_gearup-thumb.jpg
-description: Nemo was tasked with direction and design of a consumer journey with a "gear up" theme that translated through checklist posters and retail.   
+description: Nemo was tasked with direction and design for a consumer journey themed around the concept of “gear up,” which we translated through a “gear-up checklist” poster and retail collateral.   
 ---
 
-Nemo was tasked with direction and design of a consumer journey with a "gear up" theme that translated through checklist posters and retail.
+Nemo was tasked with direction and design for a consumer journey themed around the concept of “gear up,” which we translated through a “gear-up checklist” poster and retail collateral.
 
 
 ![](/media/images/nike_gearup_1.jpg) 
