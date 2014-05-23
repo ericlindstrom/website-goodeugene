@@ -428,8 +428,8 @@
  *  @file: site/base
  */
 body {
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
-  font-weight: 500;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
   font-size: 1.3em;
   background: #f0f0f0; }
 
