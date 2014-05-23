@@ -3,8 +3,7 @@
  */
 
 $border: 1px solid #ccc;
-$sans: 'alternate-gothic-no-3-d', Helvetica, Arial; 
-
+$sans: 'Oswald', sans-serif;
 
 @mixin flpr($width:100%) {
   float:left; position:relative; width:$width;
@@ -18,9 +17,9 @@ $sans: 'alternate-gothic-no-3-d', Helvetica, Arial;
 }
 
 body { 
-  font-family:'ff-tisa-web-pro', Times, serif; 
-  font-weight:200;
-  font-size:1.5em;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B'; 
+  font-weight: 500; 
+  font-size:1.3em;
   background:#f0f0f0;
 }
 
@@ -28,19 +27,19 @@ body {
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 { 
-  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial; 
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform:uppercase;
   margin:0; padding:0;
 }
 
 .serif {
-  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial; 
+  font-family: $sans; 
   font-weight: 400;
   text-transform:uppercase;
 }
 
-h1, .h1 { line-height:.9em; }
+h1, .h1 { line-height:1em; }
 h2, .h2 { font-size:1.5em; line-height:1em; }
 p { 
   margin:0; padding:0 0 $space; 
@@ -85,7 +84,7 @@ ul { margin: 0; padding: 0 0 0 $space; }
     padding:0; text-align:center; 
     margin-left:-15px;
   }
-  nav { width:240px; margin:0 auto; }
+  nav { width:245px; margin:0 auto; }
   nav ul { @include flpr($width:auto); padding:0;}
   nav ul li { @include flpr($width:auto); font-size:.8em; letter-spacing:2px; padding:6px 0; }
   nav ul li a { @include flpr($width:auto); padding:$space*.5; }
@@ -131,7 +130,7 @@ article.post {
       list-style-type:none; 
       @include flpr(); 
       border-bottom: $border; 
-      padding:$space*.15 0 $space*.25;
+      padding:$space*.35 0;
       text-transform: capitalize;
     }
   }
@@ -172,7 +171,7 @@ article.post {
       align-items: center;
 
       font-size:1.2em;
-      line-height:.9em;
+      line-height:1.1em;
     }
 
     &:hover .info { opacity:1; }

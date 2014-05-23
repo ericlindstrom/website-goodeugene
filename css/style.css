@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -427,9 +428,9 @@
  *  @file: site/base
  */
 body {
-  font-family: 'ff-tisa-web-pro', Times, serif;
-  font-weight: 200;
-  font-size: 1.5em;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+  font-weight: 500;
+  font-size: 1.3em;
   background: #f0f0f0; }
 
 #wrap {
@@ -442,19 +443,19 @@ body {
 
 .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   padding: 0; }
 
 .serif {
-  font-family: 'alternate-gothic-no-3-d', Helvetica, Arial;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
 h1, .h1 {
-  line-height: .9em; }
+  line-height: 1em; }
 
 h2, .h2 {
   font-size: 1.5em;
@@ -471,7 +472,7 @@ p {
 
 .projects #page p:last-of-type,
 .date {
-  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  font-family: "Oswald", sans-serif;
   font-size: .7em;
   color: #666;
   letter-spacing: 1px; }
@@ -502,7 +503,7 @@ ul {
 
 #header {
   background: #222;
-  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
   #header a {
@@ -515,7 +516,7 @@ ul {
     text-align: center;
     margin-left: -15px; }
   #header nav {
-    width: 240px;
+    width: 245px;
     margin: 0 auto; }
   #header nav ul {
     float: left;
@@ -592,7 +593,7 @@ article.post {
     position: relative;
     width: 100%;
     border-bottom: 1px solid #cccccc;
-    padding: 0.15em 0 0.25em;
+    padding: 0.35em 0;
     text-transform: capitalize; }
 
 .projects h1 {
@@ -638,7 +639,7 @@ article.post {
     -webkit-align-items: center;
     align-items: center;
     font-size: 1.2em;
-    line-height: .9em; }
+    line-height: 1.1em; }
   .projects .thumb_info:hover .info {
     opacity: 1; }
 
@@ -668,7 +669,7 @@ article.post {
   float: left;
   position: relative;
   width: 100%;
-  font-family: "alternate-gothic-no-3-d", Helvetica, Arial;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase; }
   .page_controls .prev, .page_controls .next {
