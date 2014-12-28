@@ -20,3 +20,5 @@ My second life—how I break away from the pressures of design and to tap into m
 ![](/media/images/Paintings9.jpg)
 ![](/media/images/Paintings10.jpg)
 ![](/media/images/Paintings11.jpg)
+![](/media/images/Paintings12.jpg)
+![](/media/images/Paintings13.jpg)
