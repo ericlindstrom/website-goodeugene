@@ -555,7 +555,7 @@ ul {
 
 article.post {
   margin: 1em 0;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #ccc; }
   article.post:first-child {
     margin-top: 0; }
 
@@ -563,14 +563,14 @@ article.post {
   margin-bottom: 1em; }
 
 .border_bottom {
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #ccc; }
 
 .info_block {
   margin-top: 20px;
   margin-bottom: 50px;
   padding-bottom: 30px; }
   .info_block .close {
-    top: -60px;
+    top: -20px;
     right: 20px;
     position: absolute;
     font-size: 2em;
@@ -592,7 +592,7 @@ article.post {
     float: left;
     position: relative;
     width: 100%;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
     padding: 0.35em 0;
     text-transform: capitalize; }
 
@@ -1274,9 +1274,9 @@ article.post {
     width: 600px; }
 
   .info_block {
-    margin-top: -30px; }
+    margin-top: 0px; }
     .info_block .close {
-      top: -10px;
+      top: -20px;
       right: 40px; }
 
   #header {
