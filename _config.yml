@@ -3,3 +3,5 @@ permalink: /minutes/:year/:month/:day/:title/
 paginate: 5
 paginate_path: "minutes/page:num"
 readiness: PRODUCTION
+gems: 
+  - jekyll-redirect-from
