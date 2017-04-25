@@ -21,6 +21,11 @@ Salomon/Bonfire approached Nemo to help develop their 2012 catalog and seasonal 
 ![](/media/images/salomon_book_8.jpg)
 ![](/media/images/salomon_book_9.jpg)
 ![](/media/images/salomon_book_10.jpg)
+![](/media/images/salomon_book_11.jpg)
+![](/media/images/salomon_book_12.jpg)
+![](/media/images/salomon_book_13.jpg)
+![](/media/images/salomon_book_14.jpg)
+![](/media/images/salomon_book_15.jpg)
 
 
 
