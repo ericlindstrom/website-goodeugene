@@ -26,5 +26,5 @@ When you get hired there’s going to be paperwork, rules and more paperwork. Ne
 
 
 NEMO DESIGN<br/>
-Client: Nemo Ineternal<br/>
-Creative: Eugene Good<br/>
+Client: Nemo Internal<br/>
+Designer/Illustration: Eugene Good<br/>
