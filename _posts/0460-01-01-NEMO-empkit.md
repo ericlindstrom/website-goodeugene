@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nike N7 Holiday13 Campaign
+title: Nemo new hire kit
 type: projects
 permalink: /projects/nemo/employee/illustration/
 thumb: /media/images/nek-thumb.jpg
